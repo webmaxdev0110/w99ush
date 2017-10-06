@@ -1,0 +1,29 @@
+<?php
+	/*****************************************
+	* Check the publish status to 			 *
+	*										 *
+	*										 *
+	* @package 	XIBLOX/						 *
+	* @author	itabix						 *
+	/****************************************/
+	
+	
+	require_once( "../../../../wp-load.php" );
+	
+	$val 	= $_GET["val"];
+	$type 	= $_GET["type"];
+	
+	global $wpdb;
+	$timestamp = date('YYYY-MM-DD HH:MM:SS');
+	$query = "SELECT * FROM `xiblox_publish_status` WHERE val_id=".$val." AND type_id=".$type;
+	if ($wpdb->get_results($query, ARRAY_A)) {
+		// already exist
+		$query = "UPDATE `xiblox_publish_status` SET `status`='1', `date` = '".$timestamp."' WHERE `val_id`='".$val."' AND `type_id`='".$type."'";
+		$wpdb->query($wpdb->prepare($query));
+	}	
+	else {
+		// insert
+		$query = "INSERT INTO `xiblox_publish_status`(`val_id`, `type_id`, `status`, `date`) VALUES('".$val."', '".$type."', '1', '".$timestamp."')";
+		$wpdb->query($wpdb->prepare($query));
+	}
+?>

@@ -1,0 +1,64 @@
+.childBlox {
+	display: none;
+}
+#blox_lists_length {
+	display: none;
+}
+#blox_lists_info {
+	display: none;
+}
+#blox_lists_paginate {
+	display: none;
+}
+#blox_lists {
+	font-family: "Segoe UI", Helvetica, Verdana;
+}
+.circleBase {
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	background: #ccc;
+	behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+}
+.treeview {
+	font-size: 15px;
+	font-family: "Segoe UI", Helvetica, Verdana !important;
+}
+.backImg {
+	background: url(../../images/test.GIF) 0 0 no-repeat;
+}
+.expandable-hitarea {
+	background: url(../../images/treeview-default.gif) -81px -3px no-repeat;
+}
+.collapsable {
+	background: url(../../images/treeview-default.gif) -64px -25px no-repeat;
+}
+#collapseAll {
+	float: left;
+}
+#expandAll {
+	float: left;
+}
+#toggleAll {
+	float: left;
+}
+.collapseAll {
+	float: left;
+	margin-top: 4px;
+	margin-right: 4px;
+	width: 12px;
+	height: 12px;
+	background: url(../../images/treeview-default.gif) -64px -25px no-repeat;
+}
+.expandAll {
+	float: left;
+	margin-top: 4px;
+	margin-right: 4px;
+	width: 12px;
+	height: 12px;
+	background: url(../../images/treeview-default.gif) -64px -25px no-repeat;
+	background-position: -80px -3px;
+}
+.toggleAll {
+	float: left;
+}

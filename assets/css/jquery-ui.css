@@ -1,0 +1,1507 @@
+﻿/*
+ * jQuery UI CSS Framework
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ */
+
+/* Layout helpers
+----------------------------------*/
+
+
+#xiblox  .xiUi-helper-hidden { display: none; }
+#xiblox  .xiUi-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+#xiblox  .xiUi-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+#xiblox  .xiUi-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#xiblox  .xiUi-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .xiUi-helper-clearfix { height:1%; }
+#xiblox  .xiUi-helper-clearfix { display:block; }
+/* end clearfix */
+#xiblox  .xiUi-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+
+/* Interaction Cues
+----------------------------------*/
+#xiblox  .xiUi-state-disabled { cursor: default !important; }
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+#xiblox  .xiUi-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+#xiblox  .xiUi-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+/*
+ * jQuery UI CSS Framework 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ *
+ * To view and modify this theme, visit http://jquit.com/builder/#gcc=ffffff&gcb=d4d4d4&gct=525252&gci=d4d4d4&pcc=d4d4d4&acb=525252&o=ffffff&ghc=3399ff&ght=ffffff&ghi=ffffff&gdc=d4d4d4&gdb=d4d4d4&gdt=525252&tdc=3399ff&tdb=3399ff&tdt=ffffff&tdi=ffffff&ddc=d4d4d4&ddb=d4d4d4&ddt=525252&pxd=000000&asc=3399ff&ast=ffffff&goc=66B3FF&gob=66B3FF&got=ffffff&toc=66B3FF&tob=66B3FF&tot=ffffff&toi=ffffff&doc=66B3FF&dob=66B3FF&dot=ffffff&pxa=525252&gac=3399ff&gab=3399ff&gat=ffffff&tac=ffffff&tab=d4d4d4&tat=525252&tai=d4d4d4&dac=3399ff&dab=3399ff&dat=ffffff&dic=d4d4d4&dib=3399ff&dit=ffffff&gic=efdca9&gib=efdca9&git=525252&gii=525252&ec=c31d1d&eb=c31d1d&et=ffffff&ei=ffffff
+ */
+
+
+/* Component containers
+----------------------------------*/
+#xiblox  .xiUi-widget { font-family: Helvetica, Arial, sans-serif; font-size: 1.1em; }
+#xiblox  .xiUi-widget .xiUi-widget { font-size: 1em; }
+#xiblox  .xiUi-widget input, #xiblox  .xiUi-widget select, #xiblox  .xiUi-widget textarea, #xiblox  .xiUi-widget button { font-family: Helvetica, Arial, sans-serif; font-size: 1em; }
+#xiblox  .xiUi-widget-content { border: 1px solid #dddddd; background: #ffffff; color: #444444; }
+#xiblox  .xiUi-widget-content a { color: #444444; }
+#xiblox  .xiUi-widget-header { border: 1px solid #dddddd; background: #dddddd; color: #444444; font-weight: bold; }
+#xiblox  .xiUi-widget-header a { color: #444444; }
+
+/* Interaction Cues
+----------------------------------*/
+#xiblox  .xiUi-state-highlight, #xiblox  .xiUi-widget-content .xiUi-state-highlight, #xiblox  .xiUi-widget-header .xiUi-state-highlight  {border: 1px solid #cccccc; background:#CC3; color: #fff; }
+#xiblox  .xiUi-state-highlight a, #xiblox  .xiUi-widget-content .xiUi-state-highlight a, #xiblox  .xiUi-widget-header .xiUi-state-highlight a { color: #444444; }
+#xiblox  .xiUi-state-error, #xiblox .xiUi-widget-content .xiUi-state-error, #xiblox .xiUi-widget-header .xiUi-state-error {border: 1px solid #ff0084; background: #ffffff; color: #222222; }
+#xiblox .xiUi-state-error a, #xiblox .xiUi-widget-content .xiUi-state-error a, #xiblox .xiUi-widget-header .xiUi-state-error a { color: #222222; }
+#xiblox .xiUi-state-error-text, #xiblox .xiUi-widget-content .xiUi-state-error-text, #xiblox .xiUi-widget-header .xiUi-state-error-text { color: #222222; }
+#xiblox .xiUi-priority-primary, #xiblox .xiUi-widget-content .xiUi-priority-primary, #xiblox .xiUi-widget-header .xiUi-priority-primary { font-weight: normal; }
+#xiblox .xiUi-priority-secondary, #xiblox .xiUi-widget-content .xiUi-priority-secondary, #xiblox  .xiUi-widget-header .xiUi-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+#xiblox .xiUi-state-disabled, #xiblox .xiUi-widget-content .xiUi-state-disabled, #xiblox .xiUi-widget-header .xiUi-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+
+/* positioning */
+#xiblox .xiUi-icon-carat-1-n { background-position: 0 0; }
+#xiblox .xiUi-icon-carat-1-ne { background-position: -16px 0; }
+#xiblox .xiUi-icon-carat-1-e { background-position: -32px 0; }
+#xiblox .xiUi-icon-carat-1-se { background-position: -48px 0; }
+#xiblox .xiUi-icon-carat-1-s { background-position: -64px 0; }
+#xiblox .xiUi-icon-carat-1-sw { background-position: -80px 0; }
+#xiblox .xiUi-icon-carat-1-w { background-position: -96px 0; }
+#xiblox .xiUi-icon-carat-1-nw { background-position: -112px 0; }
+#xiblox .xiUi-icon-carat-2-n-s { background-position: -128px 0; }
+#xiblox .xiUi-icon-carat-2-e-w { background-position: -144px 0; }
+#xiblox .xiUi-icon-triangle-1-n { background-position: 0 -16px; }
+#xiblox .xiUi-icon-triangle-1-ne { background-position: -16px -16px; }
+#xiblox .xiUi-icon-triangle-1-e { background-position: -32px -16px; }
+#xiblox .xiUi-icon-triangle-1-se { background-position: -48px -16px; }
+#xiblox .xiUi-icon-triangle-1-s { background-position: -64px -16px; }
+#xiblox .xiUi-icon-triangle-1-sw { background-position: -80px -16px; }
+#xiblox .xiUi-icon-triangle-1-w { background-position: -96px -16px; }
+#xiblox .xiUi-icon-triangle-1-nw { background-position: -112px -16px; }
+#xiblox .xiUi-icon-triangle-2-n-s { background-position: -128px -16px; }
+#xiblox .xiUi-icon-triangle-2-e-w { background-position: -144px -16px; }
+#xiblox .xiUi-icon-arrow-1-n { background-position: 0 -32px; }
+#xiblox .xiUi-icon-arrow-1-ne { background-position: -16px -32px; }
+#xiblox .xiUi-icon-arrow-1-e { background-position: -32px -32px; }
+#xiblox .xiUi-icon-arrow-1-se { background-position: -48px -32px; }
+#xiblox .xiUi-icon-arrow-1-s { background-position: -64px -32px; }
+#xiblox .xiUi-icon-arrow-1-sw { background-position: -80px -32px; }
+#xiblox .xiUi-icon-arrow-1-w { background-position: -96px -32px; }
+#xiblox .xiUi-icon-arrow-1-nw { background-position: -112px -32px; }
+#xiblox .xiUi-icon-arrow-2-n-s { background-position: -128px -32px; }
+#xiblox .xiUi-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+#xiblox .xiUi-icon-arrow-2-e-w { background-position: -160px -32px; }
+#xiblox .xiUi-icon-arrow-2-se-nw { background-position: -176px -32px; }
+#xiblox .xiUi-icon-arrowstop-1-n { background-position: -192px -32px; }
+#xiblox .xiUi-icon-arrowstop-1-e { background-position: -208px -32px; }
+#xiblox .xiUi-icon-arrowstop-1-s { background-position: -224px -32px; }
+#xiblox .xiUi-icon-arrowstop-1-w { background-position: -240px -32px; }
+#xiblox .xiUi-icon-arrowthick-1-n { background-position: 0 -48px; }
+#xiblox .xiUi-icon-arrowthick-1-ne { background-position: -16px -48px; }
+#xiblox .xiUi-icon-arrowthick-1-e { background-position: -32px -48px; }
+#xiblox .xiUi-icon-arrowthick-1-se { background-position: -48px -48px; }
+#xiblox .xiUi-icon-arrowthick-1-s { background-position: -64px -48px; }
+#xiblox .xiUi-icon-arrowthick-1-sw { background-position: -80px -48px; }
+#xiblox .xiUi-icon-arrowthick-1-w { background-position: -96px -48px; }
+#xiblox .xiUi-icon-arrowthick-1-nw { background-position: -112px -48px; }
+#xiblox .xiUi-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+#xiblox .xiUi-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+#xiblox .xiUi-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+#xiblox .xiUi-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+#xiblox .xiUi-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+#xiblox .xiUi-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+#xiblox .xiUi-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+#xiblox .xiUi-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+#xiblox .xiUi-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+#xiblox .xiUi-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+#xiblox .xiUi-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+#xiblox .xiUi-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+#xiblox .xiUi-icon-arrowreturn-1-w { background-position: -64px -64px; }
+#xiblox .xiUi-icon-arrowreturn-1-n { background-position: -80px -64px; }
+#xiblox .xiUi-icon-arrowreturn-1-e { background-position: -96px -64px; }
+#xiblox .xiUi-icon-arrowreturn-1-s { background-position: -112px -64px; }
+#xiblox .xiUi-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+#xiblox .xiUi-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+#xiblox .xiUi-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+#xiblox .xiUi-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+#xiblox .xiUi-icon-arrow-4 { background-position: 0 -80px; }
+#xiblox .xiUi-icon-arrow-4-diag { background-position: -16px -80px; }
+#xiblox .xiUi-icon-extlink { background-position: -32px -80px; }
+#xiblox .xiUi-icon-newwin { background-position: -48px -80px; }
+#xiblox .xiUi-icon-refresh { background-position: -64px -80px; }
+#xiblox .xiUi-icon-shuffle { background-position: -80px -80px; }
+#xiblox .xiUi-icon-transfer-e-w { background-position: -96px -80px; }
+#xiblox .xiUi-icon-transferthick-e-w { background-position: -112px -80px; }
+#xiblox .xiUi-icon-folder-collapsed { background-position: 0 -96px; }
+#xiblox .xiUi-icon-folder-open { background-position: -16px -96px; }
+#xiblox .xiUi-icon-document { background-position: -32px -96px; }
+#xiblox .xiUi-icon-document-b { background-position: -48px -96px; }
+#xiblox .xiUi-icon-note { background-position: -64px -96px; }
+#xiblox .xiUi-icon-mail-closed { background-position: -80px -96px; }
+#xiblox .xiUi-icon-mail-open { background-position: -96px -96px; }
+#xiblox .xiUi-icon-suitcase { background-position: -112px -96px; }
+#xiblox .xiUi-icon-comment { background-position: -128px -96px; }
+#xiblox .xiUi-icon-person { background-position: -144px -96px; }
+#xiblox .xiUi-icon-print { background-position: -160px -96px; }
+#xiblox .xiUi-icon-trash { background-position: -176px -96px; }
+#xiblox .xiUi-icon-locked { background-position: -192px -96px; }
+#xiblox .xiUi-icon-unlocked { background-position: -208px -96px; }
+#xiblox .xiUi-icon-bookmark { background-position: -224px -96px; }
+#xiblox .xiUi-icon-tag { background-position: -240px -96px; }
+#xiblox .xiUi-icon-home { background-position: 0 -112px; }
+#xiblox .xiUi-icon-flag { background-position: -16px -112px; }
+#xiblox .xiUi-icon-calendar { background-position: -32px -112px; }
+#xiblox .xiUi-icon-cart { background-position: -48px -112px; }
+#xiblox .xiUi-icon-pencil { background-position: -64px -112px; }
+#xiblox .xiUi-icon-clock { background-position: -80px -112px; }
+#xiblox .xiUi-icon-disk { background-position: -96px -112px; }
+#xiblox .xiUi-icon-calculator { background-position: -112px -112px; }
+#xiblox .xiUi-icon-zoomin { background-position: -128px -112px; }
+#xiblox .xiUi-icon-zoomout { background-position: -144px -112px; }
+#xiblox .xiUi-icon-search { background-position: -160px -112px; }
+#xiblox .xiUi-icon-wrench { background-position: -176px -112px; }
+#xiblox .xiUi-icon-gear { background-position: -192px -112px; }
+#xiblox .xiUi-icon-heart { background-position: -208px -112px; }
+#xiblox .xiUi-icon-star { background-position: -224px -112px; }
+#xiblox .xiUi-icon-link { background-position: -240px -112px; }
+#xiblox .xiUi-icon-cancel { background-position: 0 -128px; }
+#xiblox .xiUi-icon-plus { background-position: -16px -128px; }
+#xiblox .xiUi-icon-plusthick { background-position: -32px -128px; }
+#xiblox .xiUi-icon-minus { background-position: -48px -128px; }
+#xiblox .xiUi-icon-minusthick { background-position: -64px -128px; }
+#xiblox .xiUi-icon-close { background-position: -80px -128px; }
+#xiblox .xiUi-icon-closethick { background-position: -96px -128px; }
+#xiblox .xiUi-icon-key { background-position: -112px -128px; }
+#xiblox .xiUi-icon-lightbulb { background-position: -128px -128px; }
+#xiblox .xiUi-icon-scissors { background-position: -144px -128px; }
+#xiblox .xiUi-icon-clipboard { background-position: -160px -128px; }
+#xiblox .xiUi-icon-copy { background-position: -176px -128px; }
+#xiblox .xiUi-icon-contact { background-position: -192px -128px; }
+#xiblox .xiUi-icon-image { background-position: -208px -128px; }
+#xiblox .xiUi-icon-video { background-position: -224px -128px; }
+#xiblox .xiUi-icon-script { background-position: -240px -128px; }
+#xiblox .xiUi-icon-alert { background-position: 0 -144px; }
+#xiblox .xiUi-icon-info { background-position: -16px -144px; }
+#xiblox .xiUi-icon-notice { background-position: -32px -144px; }
+#xiblox .xiUi-icon-help { background-position: -48px -144px; }
+#xiblox .xiUi-icon-check { background-position: -64px -144px; }
+#xiblox .xiUi-icon-bullet { background-position: -80px -144px; }
+#xiblox .xiUi-icon-radio-off { background-position: -96px -144px; }
+#xiblox .xiUi-icon-radio-on { background-position: -112px -144px; }
+#xiblox .xiUi-icon-pin-w { background-position: -128px -144px; }
+#xiblox .xiUi-icon-pin-s { background-position: -144px -144px; }
+#xiblox .xiUi-icon-play { background-position: 0 -160px; }
+#xiblox .xiUi-icon-pause { background-position: -16px -160px; }
+#xiblox .xiUi-icon-seek-next { background-position: -32px -160px; }
+#xiblox .xiUi-icon-seek-prev { background-position: -48px -160px; }
+#xiblox .xiUi-icon-seek-end { background-position: -64px -160px; }
+#xiblox .xiUi-icon-seek-start { background-position: -80px -160px; }
+/* xiUi-icon-seek-first is deprecated, use xiUi-icon-seek-start instead */
+#xiblox .xiUi-icon-seek-first { background-position: -80px -160px; }
+#xiblox .xiUi-icon-stop { background-position: -96px -160px; }
+#xiblox .xiUi-icon-eject { background-position: -112px -160px; }
+#xiblox .xiUi-icon-volume-off { background-position: -128px -160px; }
+#xiblox .xiUi-icon-volume-on { background-position: -144px -160px; }
+#xiblox .xiUi-icon-power { background-position: 0 -176px; }
+#xiblox .xiUi-icon-signal-diag { background-position: -16px -176px; }
+#xiblox .xiUi-icon-signal { background-position: -32px -176px; }
+#xiblox .xiUi-icon-battery-0 { background-position: -48px -176px; }
+#xiblox .xiUi-icon-battery-1 { background-position: -64px -176px; }
+#xiblox .xiUi-icon-battery-2 { background-position: -80px -176px; }
+#xiblox .xiUi-icon-battery-3 { background-position: -96px -176px; }
+#xiblox .xiUi-icon-circle-plus { background-position: 0 -192px; }
+#xiblox .xiUi-icon-circle-minus { background-position: -16px -192px; }
+#xiblox .xiUi-icon-circle-close { background-position: -32px -192px; }
+#xiblox .xiUi-icon-circle-triangle-e { background-position: -48px -192px; }
+#xiblox .xiUi-icon-circle-triangle-s { background-position: -64px -192px; }
+#xiblox .xiUi-icon-circle-triangle-w { background-position: -80px -192px; }
+#xiblox .xiUi-icon-circle-triangle-n { background-position: -96px -192px; }
+#xiblox .xiUi-icon-circle-arrow-e { background-position: -112px -192px; }
+#xiblox .xiUi-icon-circle-arrow-s { background-position: -128px -192px; }
+#xiblox .xiUi-icon-circle-arrow-w { background-position: -144px -192px; }
+#xiblox .xiUi-icon-circle-arrow-n { background-position: -160px -192px; }
+#xiblox .xiUi-icon-circle-zoomin { background-position: -176px -192px; }
+#xiblox .xiUi-icon-circle-zoomout { background-position: -192px -192px; }
+#xiblox .xiUi-icon-circle-check { background-position: -208px -192px; }
+#xiblox .xiUi-icon-circlesmall-plus { background-position: 0 -208px; }
+#xiblox .xiUi-icon-circlesmall-minus { background-position: -16px -208px; }
+#xiblox .xiUi-icon-circlesmall-close { background-position: -32px -208px; }
+#xiblox .xiUi-icon-squaresmall-plus { background-position: -48px -208px; }
+#xiblox .xiUi-icon-squaresmall-minus { background-position: -64px -208px; }
+#xiblox .xiUi-icon-squaresmall-close { background-position: -80px -208px; }
+#xiblox .xiUi-icon-grip-dotted-vertical { background-position: 0 -224px; }
+#xiblox .xiUi-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+#xiblox .xiUi-icon-grip-solid-vertical { background-position: -32px -224px; }
+#xiblox .xiUi-icon-grip-solid-horizontal { background-position: -48px -224px; }
+#xiblox .xiUi-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+#xiblox .xiUi-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+#xiblox  .xiUi-corner-all, #xiblox .xiUi-corner-top, #xiblox .xiUi-corner-left, #xiblox .xiUi-corner-tl { -moz-border-radius-topleft: 0; -webkit-border-top-left-radius: 0; -khtml-border-top-left-radius: 0; border-top-left-radius: 0; }
+#xiblox  .xiUi-corner-all, #xiblox .xiUi-corner-top, #xiblox .xiUi-corner-right, #xiblox .xiUi-corner-tr { -moz-border-radius-topright: 0; -webkit-border-top-right-radius: 0; -khtml-border-top-right-radius: 0; border-top-right-radius: 0; }
+#xiblox  .xiUi-corner-all,#xiblox  .xiUi-corner-bottom, #xiblox .xiUi-corner-left, #xiblox .xiUi-corner-bl { -moz-border-radius-bottomleft: 0; -webkit-border-bottom-left-radius: 0; -khtml-border-bottom-left-radius: 0; border-bottom-left-radius: 0; }
+#xiblox  .xiUi-corner-all, #xiblox .xiUi-corner-bottom, #xiblox .xiUi-corner-right, #xiblox .xiUi-corner-br { -moz-border-radius-bottomright: 0; -webkit-border-bottom-right-radius: 0; -khtml-border-bottom-right-radius: 0; border-bottom-right-radius: 0; }
+
+/* Overlays */
+#xiblox .xiUi-widget-overlay { background: #eeeeee; opacity: .80;filter:Alpha(Opacity=80); }
+#xiblox .xiUi-widget-shadow { margin: -4px 0 0 -4px; padding: 4px; background: #aaaaaa; opacity: .60;filter:Alpha(Opacity=60); -moz-border-radius: 0px; -khtml-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px; }/*
+ * jQuery UI Resizable 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Resizable#theming
+ */
+#xiblox .xiUi-resizable { position: relative;}
+#xiblox .xiUi-resizable-handle { position: absolute;font-size: 0.1px;z-index: 99999; display: block; }
+#xiblox .xiUi-resizable-disabled .xiUi-resizable-handle, #xiblox .xiUi-resizable-autohide .xiUi-resizable-handle { display: none; }
+#xiblox .xiUi-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+#xiblox .xiUi-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+#xiblox .xiUi-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
+#xiblox .xiUi-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+#xiblox .xiUi-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+#xiblox .xiUi-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+#xiblox .xiUi-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+#xiblox .xiUi-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}/*
+ * jQuery UI Selectable 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Selectable#theming
+ */
+#xiblox .xiUi-selectable-helper { position: absolute; z-index: 100; border:1px dotted black; }
+/*
+ * jQuery UI Accordion 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Accordion#theming
+ */
+/* IE/Win - Fix animation bug - #4615 */
+#xiblox .xiUi-accordion { width: 100%; }
+#xiblox .xiUi-accordion .xiUi-accordion-header { cursor: pointer; position: relative; margin-top: 1px; zoom: 1; }
+#xiblox .xiUi-accordion .xiUi-accordion-li-fix { display: inline; }
+#xiblox .xiUi-accordion .xiUi-accordion-header-active { border-bottom: 0 !important; }
+#xiblox .xiUi-accordion .xiUi-accordion-header a { display: block; font-size: 1em; padding: .5em .5em .5em .7em; }
+#xiblox .xiUi-accordion-icons .xiUi-accordion-header a { padding-left: 2.2em; }
+#xiblox .xiUi-accordion .xiUi-accordion-header .xiUi-icon { position: absolute; left: 2px; top: 50%; margin-top: -8px; }
+#xiblox .xiUi-accordion .xiUi-accordion-content { padding: 1em 2.2em; border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow: auto; display: none; zoom: 1; }
+#xiblox .xiUi-accordion .xiUi-accordion-content-active { display: block; }
+/*
+ * jQuery UI Autocomplete 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Autocomplete#theming
+ */
+#xiblox .xiUi-autocomplete { position: absolute; cursor: default; }	
+
+/* workarounds */
+* html #xiblox .xiUi-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+
+/*
+ * jQuery UI Menu 1.8.16
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Menu#theming
+ */
+#xiblox .xiUi-menu {
+	list-style:none;
+	padding: 2px;
+	margin: 0;
+	display:block;
+	float: left;
+}
+#xiblox .xiUi-menu .xiUi-menu {
+	margin-top: -3px;
+}
+#xiblox .xiUi-menu .xiUi-menu-item {
+	margin:0;
+	padding: 0;
+	zoom: 1;
+	float: left;
+	clear: left;
+	width: 100%;
+}
+#xiblox .xiUi-menu .xiUi-menu-item a {
+	text-decoration:none;
+	display:block;
+	padding:.2em .4em;
+	line-height:1.5;
+	zoom:1;
+}
+#xiblox .xiUi-menu .xiUi-menu-item a.xiUi-state-hover,
+#xiblox .xiUi-menu .xiUi-menu-item a.xiUi-state-active {
+	font-weight: normal;
+	margin: -1px;
+}
+/*
+ * jQuery UI Button 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Button#theming
+ */
+#xiblox .xiUi-button { display: inline-block; position: relative; padding: 0; margin-right: .1em; text-decoration: none !important; cursor: pointer; text-align: center; zoom: 1; overflow: visible; } /* the overflow property removes extra width in IE */
+#xiblox .xiUi-button-icon-only { width: 2.2em; } /* to make room for the icon, a width needs to be set here */
+button.xiUi-button-icon-only { width: 2.4em; } /* button elements seem to need a little more width */
+.xiUi-button-icons-only { width: 3.4em; } 
+button.xiUi-button-icons-only { width: 3.7em; } 
+
+/*button text element */
+#xiblox .xiUi-button-icon-only .xiUi-button-text, #xiblox .xiUi-button-icons-only .xiUi-button-text { padding: .4em; text-indent: -9999999px; }
+#xiblox .xiUi-button-text-icon-primary .xiUi-button-text,#xiblox  .xiUi-button-text-icons .xiUi-button-text { padding: .4em 1em .4em 2.1em; }
+#xiblox .xiUi-button-text-icon-secondary .xiUi-button-text, #xiblox .xiUi-button-text-icons .xiUi-button-text { padding: .4em 2.1em .4em 1em; }
+#xiblox .xiUi-button-text-icons .xiUi-button-text { padding-left: 2.1em; padding-right: 2.1em; }
+/* no icon support for input elements, provide padding by default */
+input.xiUi-button { padding: .4em 1em; }
+
+/*button icon element(s) */
+/*.xiUi-button-icon-only .xiUi-icon, .xiUi-button-text-icon-primary .xiUi-icon, .xiUi-button-text-icon-secondary .xiUi-icon, .xiUi-button-text-icons .xiUi-icon, .xiUi-button-icons-only .xiUi-icon { position: absolute; top: 50%; margin-top: -8px; }
+.xiUi-button-icon-only .xiUi-icon { left: 50%; margin-left: -8px; }
+.xiUi-button-text-icon-primary .xiUi-button-icon-primary, .xiUi-button-text-icons .xiUi-button-icon-primary, .xiUi-button-icons-only .xiUi-button-icon-primary { left: .5em; }
+.xiUi-button-text-icon-secondary .xiUi-button-icon-secondary, .xiUi-button-text-icons .xiUi-button-icon-secondary, .xiUi-button-icons-only .xiUi-button-icon-secondary { right: .5em; }
+.xiUi-button-text-icons .xiUi-button-icon-secondary, .xiUi-button-icons-only .xiUi-button-icon-secondary { right: .5em; }
+*/
+
+ /*button icon element(s) */
+#xiblox .xiUi-button-icon-only .xiUi-icon, #xiblox .xiUi-button-text-icon-primary .xiUi-icon, .xiUi-button-text-icon-secondary .xiUi-icon, .xiUi-button-text-icons .xiUi-icon, .xiUi-button-icons-only .xiUi-icon { position: absolute; top: 50%; margin-top: -12px; }
+#xiblox .xiUi-button-icon-only .xiUi-icon { left: 50%; margin-left: -12px; }
+#xiblox .xiUi-button-text-icon-primary .xiUi-button-icon-primary, #xiblox .xiUi-button-text-icons .xiUi-button-icon-primary, #xiblox .xiUi-button-icons-only .xiUi-button-icon-primary { left: .35em; }
+#xiblox .xiUi-button-text-icon-secondary .xiUi-button-icon-secondary, #xiblox .xiUi-button-text-icons .xiUi-button-icon-secondary, #xiblox .xiUi-button-icons-only .xiUi-button-icon-secondary { right: .35em; }
+#xiblox .xiUi-button-text-icons .xiUi-button-icon-secondary, #xiblox .xiUi-button-icons-only .xiUi-button-icon-secondary { right: .35em; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*button sets*/
+#xiblox .xiUi-buttonset { margin-right: 7px; }
+#xiblox .xiUi-buttonset .xiUi-button { margin-left: 0; margin-right: -.3em; }
+
+/* workarounds */
+button.xiUi-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra padding in Firefox */
+/*
+ * jQuery UI Dialog 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Dialog#theming
+ */
+#xiblox .xiUi-dialog { position: absolute; padding: .2em; width: 300px; overflow: hidden; }
+#xiblox .xiUi-dialog .xiUi-dialog-titlebar { padding: .4em 1em; position: relative;  }
+#xiblox .xiUi-dialog-titlebar { padding: .4em 1em; position: relative;  }
+#xiblox .xiUi-dialog .xiUi-dialog-title { float: left; margin: .1em 16px .1em 0; } 
+#xiblox .xiUi-dialog-title { float: left; margin: .1em 16px .1em 0; } 
+#xiblox .xiUi-dialog .xiUi-dialog-titlebar-close { position: absolute; right: .3em; top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
+#xiblox .xiUi-dialog-titlebar-close { position: absolute; right: .3em; top: 23%; width: 25px; padding: 1px; height: 24px; }
+#xiblox .xiUi-dialog .xiUi-dialog-titlebar-close span { display: block; margin: 1px; }
+#xiblox  .xiUi-dialog-titlebar-close span { display: block; margin: 1px; }
+#xiblox .xiUi-dialog .xiUi-dialog-titlebar-close:hover, .xiUi-dialog .xiUi-dialog-titlebar-close:focus { padding: 0; }
+#xiblox .xiUi-dialog-titlebar-close:hover, .xiUi-dialog .xiUi-dialog-titlebar-close:focus { padding: 0; }
+#xiblox .xiUi-dialog .xiUi-dialog-content { position: relative; border: 0; padding: .5em 1em; background: none; overflow: auto; zoom: 1; }
+#xiblox .xiUi-dialog-content { position: relative; border: 0; padding: .5em 1em; background: none; overflow: auto; zoom: 1; }
+#xiblox .xiUi-dialog .xiUi-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
+#xiblox  .xiUi-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
+#xiblox .xiUi-dialog .xiUi-dialog-buttonpane .xiUi-dialog-buttonset { float: right; }
+#xiblox .xiUi-dialog-buttonpane .xiUi-dialog-buttonset { float: right; }
+#xiblox .xiUi-dialog .xiUi-dialog-buttonpane button { margin: .5em .4em .5em 0; cursor: pointer; }
+#xiblox .xiUi-dialog-buttonpane button { margin: .5em .4em .5em 0; cursor: pointer; }
+#xiblox .xiUi-dialog .xiUi-resizable-se { width: 14px; height: 14px; right: 2px; bottom: 2px; }
+#xiblox .xiUi-resizable-se { width: 14px; height: 14px; right: 2px; bottom: 2px; }
+#xiblox .xiUi-draggable .xiUi-dialog-titlebar { cursor: move; }
+
+/*
+ * jQuery UI Slider 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Slider#theming
+ */
+#xiblox .xiUi-slider { position: relative; text-align: left; }
+#xiblox .xiUi-slider .xiUi-slider-handle { position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; }
+#xiblox .xiUi-slider .xiUi-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+
+#xiblox .xiUi-slider-horizontal { height: .8em; }
+#xiblox .xiUi-slider-horizontal .xiUi-slider-handle { top: -.3em; margin-left: -.6em; }
+#xiblox .xiUi-slider-horizontal .xiUi-slider-range { top: 0; height: 100%; }
+#xiblox .xiUi-slider-horizontal .xiUi-slider-range-min { left: 0; }
+#xiblox .xiUi-slider-horizontal .xiUi-slider-range-max { right: 0; }
+
+#xiblox .xiUi-slider-vertical { width: .8em; height: 100px; }
+#xiblox .xiUi-slider-vertical .xiUi-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+#xiblox .xiUi-slider-vertical .xiUi-slider-range { left: 0; width: 100%; }
+#xiblox .xiUi-slider-vertical .xiUi-slider-range-min { bottom: 0; }
+#xiblox .xiUi-slider-vertical .xiUi-slider-range-max { top: 0; }/*
+ * jQuery UI Tabs 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+#xiblox .xiUi-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+#xiblox .xiUi-tabs .xiUi-tabs-nav { margin: 0; padding: .2em .2em 0; }
+#xiblox .xiUi-tabs .xiUi-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+#xiblox .xiUi-tabs .xiUi-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+#xiblox .xiUi-tabs .xiUi-tabs-nav li.xiUi-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+#xiblox .xiUi-tabs .xiUi-tabs-nav li.xiUi-tabs-selected a, #xiblox .xiUi-tabs .xiUi-tabs-nav li.xiUi-state-disabled a, #xiblox .xiUi-tabs .xiUi-tabs-nav li.xiUi-state-processing a { cursor: text; }
+#xiblox .xiUi-tabs .xiUi-tabs-nav li a, #xiblox .xiUi-tabs.xiUi-tabs-collapsible .xiUi-tabs-nav li.xiUi-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+#xiblox .xiUi-tabs .xiUi-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }
+#xiblox .xiUi-tabs .xiUi-tabs-hide { display: none !important; }
+/*
+ * jQuery UI Datepicker 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Datepicker#theming
+ */
+#xiblox .xiUi-datepicker { width: 17em; padding: .2em .2em 0; display: none; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-header { position:relative; padding:.2em 0; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-prev, #xiblox .xiUi-datepicker .xiUi-datepicker-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-prev-hover, #xiblox .xiUi-datepicker .xiUi-datepicker-next-hover { top: 1px; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-prev { left:2px; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-next { right:2px; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-prev-hover { left:1px; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-next-hover { right:1px; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-prev span, #xiblox .xiUi-datepicker .xiUi-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+#xiblox .xiUi-datepicker .xiUi-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-title select { font-size:1em; margin:1px 0; }
+#xiblox .xiUi-datepicker select.xiUi-datepicker-month-year {width: 100%;}
+#xiblox .xiUi-datepicker select.xiUi-datepicker-month, 
+#xiblox .xiUi-datepicker select.xiUi-datepicker-year { width: 49%;}
+#xiblox .xiUi-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
+#xiblox .xiUi-datepicker th { padding: .7em .3em; text-align: center; font-weight: normal; border: 0;  }
+#xiblox .xiUi-datepicker td { border: 0; padding: 1px; }
+#xiblox .xiUi-datepicker td span, #xiblox .xiUi-datepicker td a { display: block; padding: .2em; text-align: right; text-decoration: none; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-buttonpane button.xiUi-datepicker-current { float:left; }
+
+/* with multiple calendars */
+#xiblox .xiUi-datepicker.xiUi-datepicker-multi { width:auto; }
+#xiblox .xiUi-datepicker-multi .xiUi-datepicker-group { float:left; }
+#xiblox .xiUi-datepicker-multi .xiUi-datepicker-group table { width:95%; margin:0 auto .4em; }
+#xiblox .xiUi-datepicker-multi-2 .xiUi-datepicker-group { width:50%; }
+#xiblox .xiUi-datepicker-multi-3 .xiUi-datepicker-group { width:33.3%; }
+#xiblox .xiUi-datepicker-multi-4 .xiUi-datepicker-group { width:25%; }
+#xiblox .xiUi-datepicker-multi .xiUi-datepicker-group-last .xiUi-datepicker-header { border-left-width:0; }
+#xiblox .xiUi-datepicker-multi .xiUi-datepicker-group-middle .xiUi-datepicker-header { border-left-width:0; }
+#xiblox .xiUi-datepicker-multi .xiUi-datepicker-buttonpane { clear:left; }
+#xiblox .xiUi-datepicker-row-break { clear:both; width:100%; font-size:0em; }
+
+/* RTL support */
+#xiblox .xiUi-datepicker-rtl { direction: rtl; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-prev { right: 2px; left: auto; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-next { left: 2px; right: auto; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-prev:hover { right: 1px; left: auto; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-next:hover { left: 1px; right: auto; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-buttonpane { clear:right; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-buttonpane button { float: left; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-buttonpane button.xiUi-datepicker-current { float:right; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-group { float:right; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-group-last .xiUi-datepicker-header { border-right-width:0; border-left-width:1px; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-group-middle .xiUi-datepicker-header { border-right-width:0; border-left-width:1px; }
+
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+#xiblox .xiUi-datepicker-cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 200px; /*must have*/
+    height: 200px; /*must have*/
+}/*
+ * jQuery UI Progressbar 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Progressbar#theming
+ */
+#xiblox .xiUi-progressbar { height:2em; text-align: left; }
+#xiblox .xiUi-progressbar .xiUi-progressbar-value {margin: -1px; height:100%; }
+
+/* General */
+html, body{background-color:#ffffff;}
+#xiblox  .xiUi-widget{font-family:"Segoe UI", Helvetica, Verdana;}
+
+/* Interaction states
+----------------------------------*/
+#xiblox .xiUi-state-default, #xiblox .xiUi-widget-content .xiUi-state-default, #xiblox .xiUi-widget-header .xiUi-state-default { border:2px solid #dddddd;background:inherit; font-weight: bold; text-decoration:none; }
+#xiblox .xiUi-state-default a, #xiblox .xiUi-state-default a:link, #xiblox .xiUi-state-default a:visited { text-decoration: none; }
+#xiblox .xiUi-state-hover, #xiblox .xiUi-widget-content .xiUi-state-hover, #xiblox .xiUi-widget-header .xiUi-state-hover, #xiblox .xiUi-state-focus, #xiblox .xiUi-widget-content .xiUi-state-focus, #xiblox .xiUi-widget-header .xiUi-state-focus { font-weight: bold; color: #ffffff; border-width:2px;}
+#xiblox .xiUi-state-hover a, #xiblox .xiUi-state-hover a:hover { color: #ffffff; text-decoration: none; }
+#xiblox .xiUi-state-active, #xiblox .xiUi-widget-content .xiUi-state-active, #xiblox .xiUi-widget-header .xiUi-state-active { border: 1px solid #dddddd; font-weight: bold; color: #ff0084;}
+#xiblox .xiUi-state-active a, #xiblox .xiUi-state-active a:link, #xiblox .xiUi-state-active a:visited { color: #ff0084; text-decoration: none; }
+#xiblox .xiUi-widget :active { outline: none; }
+
+/* Accordion */
+#xiblox .xiUi-accordion-header{border:2px solid;}
+#xiblox .xiUi-accordion .xiUi-accordion-header{margin-top:2px;}
+#xiblox .xiUi-accordion-content{border:2px solid;border-top:none;margin-bottom:3px !important;}
+#xiblox .xiUi-accordion .xiUi-accordion-header a { font-size: 1.0em; padding: .6em .3em .5em 2.9em; font-weight:bold;}
+#xiblox .xiUi-accordion > .xiUi-state-active a, #xiblox .xiUi-accordion > div > h3.xiUi-state-active a  { padding-bottom:.8em;}
+/*.xiUi-accordion .xiUi-accordion-header .xiUi-icon{margin-top:-12px;}*/
+#xiblox .xiUi-accordion > .xiUi-state-active, #xiblox .xiUi-accordion > div > h3.xiUi-state-active{border-bottom:none !important;}
+#xiblox .xiUi-accordion-header > .xiUi-icon{margin:4px;}
+
+/* Tabs */
+#xiblox  .xiUi-tabs{padding:0;border:none;position:relative;top:-3px;}
+#xiblox  .xiUi-tabs-nav{padding:0px 0px 0px 0px !important;border:none;border-bottom:2px solid;background-color:#ffffff;}
+#xiblox .xiUi-tabs-nav .xiUi-state-default{border:none;padding:0px !important;margin-right:2px !important;background:none !important;}
+#xiblox .xiUi-tabs-nav .xiUi-state-default a{border:2px solid;position:relative;top:2px;font-weight:bold;margin-bottom:4px;height:16px;}
+/*.xiUi-tabs-nav .xiUi-tabs-selected a{border:2px solid;height:1.8em;border-bottom:none !important;}*/
+#xiblox .xiUi-tabs-nav .xiUi-state-active a{border:2px solid;border-bottom:none !important;margin-bottom:0;height:22px;}
+#xiblox .xiUi-tabs .xiUi-widget-content{border:2px solid !important;border-top:none !important;}
+#xiblox .xiUi-tabs .xiUi-widget-content .xiUi-tabs {border:none !important;}
+#xiblox .xiUi-tabs-nav .xiUi-state-hover{border:none;}
+
+
+/* Dialog */
+#xiblox .xiUi-dialog-titlebar {border:none;border-bottom-width:2px;padding:.6em 1em .6em 1em !important;font-weight:bold;font-size:1.1em;}
+#xiblox .xiUi-dialog-buttonpane{border-top-width:2px !important;margin-top:0 !important;}
+#xiblox .xiUi-dialog .xiUi-dialog-titlebar-close{width:24px;height:24px;margin:-13px 0px 0px 0px;padding:0;}
+#xiblox .xiUi-dialog-titlebar-close > .xiUi-icon{margin:3px !important;}
+
+/* Datepicker*/
+#xiblox .xiUi-datepicker {border:2px solid;padding:0 !important;}
+#xiblox .xiUi-datepicker .xiUi-datepicker-header{border:none;padding:.4em 1em .4em 1em;}
+#xiblox .xiUi-datepicker .xiUi-datepicker-header .xiUi-state-default, #xiblox .xiUi-datepicker .xiUi-datepicker-header .xiUi-state-hover{background:none;border:none;padding:0;}
+#xiblox .xiUi-datepicker .xiUi-datepicker-prev, #xiblox .xiUi-datepicker .xiUi-datepicker-next{width:24px;height:24px;margin:0;}
+#xiblox .xiUi-datepicker .xiUi-datepicker-prev span, #xiblox .xiUi-datepicker .xiUi-datepicker-next span{position:relative;top:0;left:0;margin:0;}
+#xiblox .xiUi-datepicker .xiUi-datepicker-prev-hover { left:2px;top:2px; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-next-hover { right:2px;top:2px; }
+#xiblox .xiUi-datepicker table {margin:0px;border:1px solid;}
+#xiblox .xiUi-datepicker-calendar .xiUi-state-default, #xiblox .xiUi-datepicker-calendar .xiUi-state-hover, #xiblox .xiUi-datepicker-calendar .xiUi-state-highlight, #xiblox .xiUi-datepicker-calendar .xiUi-state-active{border-width:2px;}
+#xiblox .xiUi-datepicker .xiUi-icon{margin:4px !important;}
+
+/* Button */
+#xiblox .xiUi-button{border-width:2px !important;border-bottom-style:solid;font-weight:bold !important;}
+
+#xiblox .xiUi-buttonset .xiUi-button { margin-left: 0; margin-right: -1px; }
+
+/* Additional states */
+#xiblox .xiUi-state-highlight{border:2px solid;}
+#xiblox .xiUi-state-error{border:2px solid;}
+/*.xiUi-state-highlight .xiUi-icon, .xiUi-state-error .xiUi-icon{position:relative;top:-4px;}*/
+
+/* Slider */
+#xiblox .xiUi-slider{border:none;}
+#xiblox .xiUi-slider .xiUi-slider-handle{width:.8em;height:.8em;border:none;margin:-.4em;}
+#xiblox .xiUi-slider-horizontal .xiUi-slider-handle{margin-top:0; top:0;}
+#xiblox .xiUi-slider-vertical .xiUi-slider-handle{margin-left:0;left:0;}
+
+/* Progressbar */
+#xiblox .xiUi-progressbar{border:none;height:0.8em;}
+#xiblox .xiUi-progressbar .xiUi-progressbar-value{border:none;}
+
+/* Autocomplete */
+#xiblox .xiUi-autocomplete {border:solid 2px #bbbbbb;padding:0;}
+#xiblox .xiUi-autocomplete .xiUi-menu-item a{padding:5px;border:none;margin:0 !important;}
+
+/* Icon states */
+#xiblox .xiUi-icon { width: 16px; height: 16px; }
+/* General */
+#xiblox .xiUi-icon, #xiblox .xiUi-widget-content .xiUi-icon, #xiblox .xiUi-widget-header .xiUi-icon  {background-image:url(../../images/xiUi-icons_d4d4d4_0.png)}
+#xiblox .xiUi-state-default .xiUi-icon {background-image:url(../../images/xiUi-icons_525252_0.png)}
+#xiblox .xiUi-state-active .xiUi-icon, #xiblox .xiUi-state-hover .xiUi-icon{background-image:url(../../images/xiUi-icons_ffffff_0.png);}
+#xiblox .xiUi-widget-overlay{background:#ffffff;}
+#xiblox   .xiUi-widget-content{color:#525252;}
+
+
+
+
+
+/* Button states */
+#xiblox .xiUi-state-default, #xiblox .xiUi-widget-content .xiUi-state-default{background-color:#d4d4d4;border-color:#d4d4d4;color:#525252;}
+#xiblox .xiUi-state-focus, #xiblox .xiUi-widget-content .xiUi-state-focus{background-color:#66B3FF;border-color:#66B3FF;color:#ffffff;}
+#xiblox .xiUi-state-hover, #xiblox .xiUi-widget-content .xiUi-state-hover{background-color:#66B3FF;border-color:#66B3FF;color:#ffffff;}
+#xiblox .xiUi-state-active, #xiblox .xiUi-widget-content .xiUi-state-active{background-color:#3399ff;border-color:#3399ff;color:#ffffff;}
+
+
+/* Accordion */
+#xiblox .xiUi-accordion-content{border-color:#d4d4d4;background:#ffffff}
+#xiblox .xiUi-accordion-header.xiUi-state-active, #xiblox .xiUi-accordion-header.xiUi-state-active.xiUi-state-hover{background-color:#ffffff !important;color:#525252;border-color:#d4d4d4 !important;background-image:url(../../images/xiUi-icons_d4d4d4_0.png) !important;background-position: -230px -213px !important;}
+#xiblox .xiUi-accordion-header.xiUi-state-active a{ color: #525252 !important;}
+#xiblox .xiUi-accordion-header.xiUi-state-default{border-color:#3399ff;background:#3399ff;}
+#xiblox .xiUi-accordion-header.xiUi-state-default a{ color: #ffffff;}
+#xiblox .xiUi-accordion-header.xiUi-state-hover{background:#66B3FF;border-color:#66B3FF;}
+#xiblox .xiUi-accordion-header.xiUi-state-hover a{color:#ffffff;}
+#xiblox .xiUi-accordion-header.xiUi-state-active .xiUi-icon{background-image:url(../../images/xiUi-icons_d4d4d4_0.png) !important;}
+#xiblox .xiUi-accordion-header.xiUi-state-default .xiUi-icon{background-image:url(../../images/xiUi-icons_ffffff_0.png);}
+#xiblox .xiUi-accordion-header.xiUi-state-hover .xiUi-icon{background-image:url(../../images/xiUi-icons_66B3FF_0.png);}
+#xiblox .xiUi-accordion-header{background-image:url(../../images/xiUi-icons_ffffff_0.png) !important;background-position: -230px -214px !important;background-repeat:no-repeat !important;}
+#xiblox .xiUi-accordion-header.xiUi-state-hover{background-image:url(../../images/xiUi-icons_ffffff_0.png) !important;background-position: -230px -166px !important;}
+
+
+
+/* Tabs states */
+#xiblox .xiUi-tabs-nav > .xiUi-state-default a{border-color:#ccc;background:#aaa;color:#ffffff;}
+#xiblox .xiUi-tabs-nav > .xiUi-state-active a{border-color:#d4d4d4 !important;background:#ffffff !important;color:#525252 !important;}
+#xiblox .xiUi-tabs-nav > .xiUi-state-hover a{background:#66B3FF;border-color:#66B3FF;color:#ffffff;}
+#xiblox .xiUi-tabs-nav > .xiUi-state-focus a{background:#66B3FF;border-color:;color:#ffffff;}
+#xiblox .xiUi-tabs .xiUi-widget-content{border-color:#d4d4d4 !important;}
+#xiblox  .xiUi-tabs-nav{border-color:#d4d4d4;}
+
+/* Dialog states */
+#xiblox .xiUi-dialog{border-color:#3399ff;background-color:#ffffff !important;}
+#xiblox .xiUi-dialog-titlebar{border-color:#3399ff;color:#ffffff;background-color:#3399ff;cursor: move; }
+#xiblox .xiUi-dialog-buttonpane{border-color:#3399ff !important;background-color:#ffffff;}
+#xiblox .xiUi-dialog-content{background-color:#ffffff !important;}
+#xiblox .xiUi-dialog-titlebar .xiUi-icon{background-image:url(../../images/xiUi-icons_ffffff_0.png);}
+#xiblox .xiUi-dialog-titlebar .xiUi-state-hover .xiUi-icon{background-image:url(../../images/xiUi-icons_3399ff_0.png) !important;}
+#xiblox .xiUi-dialog-titlebar-close{background-image:url(../../images/xiUi-icons_ffffff_0.png) !important;background-position: -232px -216px !important;}
+#xiblox .xiUi-dialog-titlebar-close.xiUi-state-hover{background:url(../../images/xiUi-icons_ffffff_0.png) !important;background-position: -232px -168px !important;}
+
+
+
+
+
+/* Slider */
+#xiblox .xiUi-slider{background:#d4d4d4;}
+#xiblox .xiUi-slider .xiUi-slider-range{background:#3399ff;}
+#xiblox .xiUi-slider .xiUi-state-default{background-color:#000000;}
+#xiblox .xiUi-slider .xiUi-state-active{background-color:#525252 !important;}
+#xiblox .xiUi-slider .xiUi-state-focus{background-color:#000000;}
+#xiblox .xiUi-slider .xiUi-state-hover{background-color:#525252;}
+
+/* Progressbar */
+#xiblox .xiUi-progressbar{background:#d4d4d4;}
+#xiblox .xiUi-progressbar .xiUi-progressbar-value{background-color:#3399ff;}
+
+/* Autocomplete */
+
+#xiblox .xiUi-autocomplete {border-color:#525252;}
+#xiblox .xiUi-autocomplete a{background-color:#ffffff;color:#525252;}
+#xiblox .xiUi-autocomplete .xiUi-state-hover{background:#3399ff;color:#ffffff;}
+
+/* Datepicker */
+#xiblox .xiUi-datepicker {border-color:#3399ff;}
+#xiblox .xiUi-datepicker .xiUi-datepicker-header{background-color:#3399ff;color:#ffffff;}
+#xiblox .xiUi-datepicker table {border-color:#ffffff; }
+#xiblox .xiUi-datepicker-calendar{background:#ffffff;}
+#xiblox .xiUi-datepicker-calendar .xiUi-state-default{background-color:#d4d4d4;border-color:#d4d4d4;color:#525252;}
+#xiblox .xiUi-datepicker-calendar .xiUi-state-hover{background-color:#66B3FF !important;border-color:#66B3FF !important;color:#ffffff !important;}
+#xiblox .xiUi-datepicker-calendar .xiUi-state-highlight{background-color:#d4d4d4;border-color:#3399ff;color:#ffffff;}
+#xiblox .xiUi-datepicker-calendar .xiUi-state-active{background-color:#3399ff;border-color:#3399ff;color:#ffffff;}
+#xiblox .xiUi-datepicker .xiUi-icon {background-image:url(../../images/xiUi-icons_ffffff_0.png);}
+
+#xiblox .xiUi-datepicker .xiUi-state-hover .xiUi-icon {background-image:url(../../images/xiUi-icons_3399ff_0.png)}
+#xiblox .xiUi-datepicker-next, #xiblox .xiUi-datepicker-prev{background-image:url(../../images/xiUi-icons_ffffff_0.png);background-position: -232px -216px;}
+#xiblox .xiUi-datepicker-next-hover, #xiblox .xiUi-datepicker-prev-hover{background-image:url(../../images/xiUi-icons_ffffff_0.png) !important;background-position: -232px -168px !important;opacity:1;}
+#xiblox .xiUi-datepicker-next.xiUi-state-disabled, #xiblox .xiUi-datepicker-prev.xiUi-state-disabled{background-image:url(../../images/xiUi-icons_ffffff_0.png);background-position: -232px -216px;}
+
+
+
+/* Highlight */
+#xiblox .xiUi-state-highlight{border-color:#efdca9;color:#525252;background:#efdca9;}
+#xiblox .xiUi-state-highlight .xiUi-icon{background-image:url(../../images/xiUi-icons_525252_0.png);}
+
+/* Error */
+#xiblox .xiUi-state-error{border-color:#c31d1d;color:#ffffff;background:#c31d1d;}
+#xiblox .xiUi-state-error .xiUi-icon{background-image:url(../../images/xiUi-icons_ffffff_0.png);}
+#xiblox {
+	
+	background-color: #ffffff !important;	
+	color: #525252;
+	border: 2px solid #DCDFE1;
+	padding: 0;
+	
+}
+#post_form #xiblox{
+	background-color: #ffffff !important;	
+	color: #525252;
+	border: 0px solid #3399ff;
+	padding: 0;
+}
+
+
+
+#xiblox  .xiUi-widget { font-family: Helvetica, Arial, sans-serif; font-size: 1.1em; }
+#xiblox  .xiUi-widget .xiUi-widget { font-size: 1em; }
+#xiblox  .xiUi-widget input, #xiblox  .xiUi-widget select, #xiblox  .xiUi-widget textarea, #xiblox  .xiUi-widget button { font-family: Helvetica, Arial, sans-serif; font-size: 1em; }
+#xiblox  .xiUi-widget-content { border: 1px solid #dddddd; background: #ffffff; color: #444444; }
+#xiblox  .xiUi-widget-content a { color: #444444; }
+#xiblox  .xiUi-widget-header { border: 1px solid #dddddd; background: #dddddd; color: #444444; font-weight: bold; }
+#xiblox  .xiUi-widget-header a { color: #444444; }
+
+/* Interaction Cues
+----------------------------------*/
+#xiblox  .xiUi-state-highlight, #xiblox  .xiUi-widget-content .xiUi-state-highlight, #xiblox  .xiUi-widget-header .xiUi-state-highlight  {border: 1px solid #cccccc; background:#CC3; color: #fff; }
+#xiblox  .xiUi-state-highlight a, #xiblox  .xiUi-widget-content .xiUi-state-highlight a, #xiblox  .xiUi-widget-header .xiUi-state-highlight a { color: #444444; }
+#xiblox  .xiUi-state-error, #xiblox .xiUi-widget-content .xiUi-state-error, #xiblox .xiUi-widget-header .xiUi-state-error {border: 1px solid #ff0084; background: #ffffff; color: #222222; }
+#xiblox .xiUi-state-error a, #xiblox .xiUi-widget-content .xiUi-state-error a, #xiblox .xiUi-widget-header .xiUi-state-error a { color: #222222; }
+#xiblox .xiUi-state-error-text, #xiblox .xiUi-widget-content .xiUi-state-error-text, #xiblox .xiUi-widget-header .xiUi-state-error-text { color: #222222; }
+#xiblox .xiUi-priority-primary, #xiblox .xiUi-widget-content .xiUi-priority-primary, #xiblox .xiUi-widget-header .xiUi-priority-primary { font-weight: normal; }
+#xiblox .xiUi-priority-secondary, #xiblox .xiUi-widget-content .xiUi-priority-secondary, #xiblox  .xiUi-widget-header .xiUi-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+#xiblox .xiUi-state-disabled, #xiblox .xiUi-widget-content .xiUi-state-disabled, #xiblox .xiUi-widget-header .xiUi-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+
+/* positioning */
+#xiblox .xiUi-icon-carat-1-n { background-position: 0 0; }
+#xiblox .xiUi-icon-carat-1-ne { background-position: -16px 0; }
+#xiblox .xiUi-icon-carat-1-e { background-position: -32px 0; }
+#xiblox .xiUi-icon-carat-1-se { background-position: -48px 0; }
+#xiblox .xiUi-icon-carat-1-s { background-position: -64px 0; }
+#xiblox .xiUi-icon-carat-1-sw { background-position: -80px 0; }
+#xiblox .xiUi-icon-carat-1-w { background-position: -96px 0; }
+#xiblox .xiUi-icon-carat-1-nw { background-position: -112px 0; }
+#xiblox .xiUi-icon-carat-2-n-s { background-position: -128px 0; }
+#xiblox .xiUi-icon-carat-2-e-w { background-position: -144px 0; }
+#xiblox .xiUi-icon-triangle-1-n { background-position: 0 -16px; }
+#xiblox .xiUi-icon-triangle-1-ne { background-position: -16px -16px; }
+#xiblox .xiUi-icon-triangle-1-e { background-position: -32px -16px; }
+#xiblox .xiUi-icon-triangle-1-se { background-position: -48px -16px; }
+#xiblox .xiUi-icon-triangle-1-s { background-position: -64px -16px; }
+#xiblox .xiUi-icon-triangle-1-sw { background-position: -80px -16px; }
+#xiblox .xiUi-icon-triangle-1-w { background-position: -96px -16px; }
+#xiblox .xiUi-icon-triangle-1-nw { background-position: -112px -16px; }
+#xiblox .xiUi-icon-triangle-2-n-s { background-position: -128px -16px; }
+#xiblox .xiUi-icon-triangle-2-e-w { background-position: -144px -16px; }
+#xiblox .xiUi-icon-arrow-1-n { background-position: 0 -32px; }
+#xiblox .xiUi-icon-arrow-1-ne { background-position: -16px -32px; }
+#xiblox .xiUi-icon-arrow-1-e { background-position: -32px -32px; }
+#xiblox .xiUi-icon-arrow-1-se { background-position: -48px -32px; }
+#xiblox .xiUi-icon-arrow-1-s { background-position: -64px -32px; }
+#xiblox .xiUi-icon-arrow-1-sw { background-position: -80px -32px; }
+#xiblox .xiUi-icon-arrow-1-w { background-position: -96px -32px; }
+#xiblox .xiUi-icon-arrow-1-nw { background-position: -112px -32px; }
+#xiblox .xiUi-icon-arrow-2-n-s { background-position: -128px -32px; }
+#xiblox .xiUi-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+#xiblox .xiUi-icon-arrow-2-e-w { background-position: -160px -32px; }
+#xiblox .xiUi-icon-arrow-2-se-nw { background-position: -176px -32px; }
+#xiblox .xiUi-icon-arrowstop-1-n { background-position: -192px -32px; }
+#xiblox .xiUi-icon-arrowstop-1-e { background-position: -208px -32px; }
+#xiblox .xiUi-icon-arrowstop-1-s { background-position: -224px -32px; }
+#xiblox .xiUi-icon-arrowstop-1-w { background-position: -240px -32px; }
+#xiblox .xiUi-icon-arrowthick-1-n { background-position: 0 -48px; }
+#xiblox .xiUi-icon-arrowthick-1-ne { background-position: -16px -48px; }
+#xiblox .xiUi-icon-arrowthick-1-e { background-position: -32px -48px; }
+#xiblox .xiUi-icon-arrowthick-1-se { background-position: -48px -48px; }
+#xiblox .xiUi-icon-arrowthick-1-s { background-position: -64px -48px; }
+#xiblox .xiUi-icon-arrowthick-1-sw { background-position: -80px -48px; }
+#xiblox .xiUi-icon-arrowthick-1-w { background-position: -96px -48px; }
+#xiblox .xiUi-icon-arrowthick-1-nw { background-position: -112px -48px; }
+#xiblox .xiUi-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+#xiblox .xiUi-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+#xiblox .xiUi-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+#xiblox .xiUi-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+#xiblox .xiUi-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+#xiblox .xiUi-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+#xiblox .xiUi-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+#xiblox .xiUi-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+#xiblox .xiUi-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+#xiblox .xiUi-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+#xiblox .xiUi-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+#xiblox .xiUi-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+#xiblox .xiUi-icon-arrowreturn-1-w { background-position: -64px -64px; }
+#xiblox .xiUi-icon-arrowreturn-1-n { background-position: -80px -64px; }
+#xiblox .xiUi-icon-arrowreturn-1-e { background-position: -96px -64px; }
+#xiblox .xiUi-icon-arrowreturn-1-s { background-position: -112px -64px; }
+#xiblox .xiUi-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+#xiblox .xiUi-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+#xiblox .xiUi-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+#xiblox .xiUi-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+#xiblox .xiUi-icon-arrow-4 { background-position: 0 -80px; }
+#xiblox .xiUi-icon-arrow-4-diag { background-position: -16px -80px; }
+#xiblox .xiUi-icon-extlink { background-position: -32px -80px; }
+#xiblox .xiUi-icon-newwin { background-position: -48px -80px; }
+#xiblox .xiUi-icon-refresh { background-position: -64px -80px; }
+#xiblox .xiUi-icon-shuffle { background-position: -80px -80px; }
+#xiblox .xiUi-icon-transfer-e-w { background-position: -96px -80px; }
+#xiblox .xiUi-icon-transferthick-e-w { background-position: -112px -80px; }
+#xiblox .xiUi-icon-folder-collapsed { background-position: 0 -96px; }
+#xiblox .xiUi-icon-folder-open { background-position: -16px -96px; }
+#xiblox .xiUi-icon-document { background-position: -32px -96px; }
+#xiblox .xiUi-icon-document-b { background-position: -48px -96px; }
+#xiblox .xiUi-icon-note { background-position: -64px -96px; }
+#xiblox .xiUi-icon-mail-closed { background-position: -80px -96px; }
+#xiblox .xiUi-icon-mail-open { background-position: -96px -96px; }
+#xiblox .xiUi-icon-suitcase { background-position: -112px -96px; }
+#xiblox .xiUi-icon-comment { background-position: -128px -96px; }
+#xiblox .xiUi-icon-person { background-position: -144px -96px; }
+#xiblox .xiUi-icon-print { background-position: -160px -96px; }
+#xiblox .xiUi-icon-trash { background-position: -176px -96px; }
+#xiblox .xiUi-icon-locked { background-position: -192px -96px; }
+#xiblox .xiUi-icon-unlocked { background-position: -208px -96px; }
+#xiblox .xiUi-icon-bookmark { background-position: -224px -96px; }
+#xiblox .xiUi-icon-tag { background-position: -240px -96px; }
+#xiblox .xiUi-icon-home { background-position: 0 -112px; }
+#xiblox .xiUi-icon-flag { background-position: -16px -112px; }
+#xiblox .xiUi-icon-calendar { background-position: -32px -112px; }
+#xiblox .xiUi-icon-cart { background-position: -48px -112px; }
+#xiblox .xiUi-icon-pencil { background-position: -64px -112px; }
+#xiblox .xiUi-icon-clock { background-position: -80px -112px; }
+#xiblox .xiUi-icon-disk { background-position: -96px -112px; }
+#xiblox .xiUi-icon-calculator { background-position: -112px -112px; }
+#xiblox .xiUi-icon-zoomin { background-position: -128px -112px; }
+#xiblox .xiUi-icon-zoomout { background-position: -144px -112px; }
+#xiblox .xiUi-icon-search { background-position: -160px -112px; }
+#xiblox .xiUi-icon-wrench { background-position: -176px -112px; }
+#xiblox .xiUi-icon-gear { background-position: -192px -112px; }
+#xiblox .xiUi-icon-heart { background-position: -208px -112px; }
+#xiblox .xiUi-icon-star { background-position: -224px -112px; }
+#xiblox .xiUi-icon-link { background-position: -240px -112px; }
+#xiblox .xiUi-icon-cancel { background-position: 0 -128px; }
+#xiblox .xiUi-icon-plus { background-position: -16px -128px; }
+#xiblox .xiUi-icon-plusthick { background-position: -32px -128px; }
+#xiblox .xiUi-icon-minus { background-position: -48px -128px; }
+#xiblox .xiUi-icon-minusthick { background-position: -64px -128px; }
+#xiblox .xiUi-icon-close { background-position: -80px -128px; }
+#xiblox .xiUi-icon-closethick { background-position: -96px -128px; }
+#xiblox .xiUi-icon-key { background-position: -112px -128px; }
+#xiblox .xiUi-icon-lightbulb { background-position: -128px -128px; }
+#xiblox .xiUi-icon-scissors { background-position: -144px -128px; }
+#xiblox .xiUi-icon-clipboard { background-position: -160px -128px; }
+#xiblox .xiUi-icon-copy { background-position: -176px -128px; }
+#xiblox .xiUi-icon-contact { background-position: -192px -128px; }
+#xiblox .xiUi-icon-image { background-position: -208px -128px; }
+#xiblox .xiUi-icon-video { background-position: -224px -128px; }
+#xiblox .xiUi-icon-script { background-position: -240px -128px; }
+#xiblox .xiUi-icon-alert { background-position: 0 -144px; }
+#xiblox .xiUi-icon-info { background-position: -16px -144px; }
+#xiblox .xiUi-icon-notice { background-position: -32px -144px; }
+#xiblox .xiUi-icon-help { background-position: -48px -144px; }
+#xiblox .xiUi-icon-check { background-position: -64px -144px; }
+#xiblox .xiUi-icon-bullet { background-position: -80px -144px; }
+#xiblox .xiUi-icon-radio-off { background-position: -96px -144px; }
+#xiblox .xiUi-icon-radio-on { background-position: -112px -144px; }
+#xiblox .xiUi-icon-pin-w { background-position: -128px -144px; }
+#xiblox .xiUi-icon-pin-s { background-position: -144px -144px; }
+#xiblox .xiUi-icon-play { background-position: 0 -160px; }
+#xiblox .xiUi-icon-pause { background-position: -16px -160px; }
+#xiblox .xiUi-icon-seek-next { background-position: -32px -160px; }
+#xiblox .xiUi-icon-seek-prev { background-position: -48px -160px; }
+#xiblox .xiUi-icon-seek-end { background-position: -64px -160px; }
+#xiblox .xiUi-icon-seek-start { background-position: -80px -160px; }
+/* xiUi-icon-seek-first is deprecated, use xiUi-icon-seek-start instead */
+#xiblox .xiUi-icon-seek-first { background-position: -80px -160px; }
+#xiblox .xiUi-icon-stop { background-position: -96px -160px; }
+#xiblox .xiUi-icon-eject { background-position: -112px -160px; }
+#xiblox .xiUi-icon-volume-off { background-position: -128px -160px; }
+#xiblox .xiUi-icon-volume-on { background-position: -144px -160px; }
+#xiblox .xiUi-icon-power { background-position: 0 -176px; }
+#xiblox .xiUi-icon-signal-diag { background-position: -16px -176px; }
+#xiblox .xiUi-icon-signal { background-position: -32px -176px; }
+#xiblox .xiUi-icon-battery-0 { background-position: -48px -176px; }
+#xiblox .xiUi-icon-battery-1 { background-position: -64px -176px; }
+#xiblox .xiUi-icon-battery-2 { background-position: -80px -176px; }
+#xiblox .xiUi-icon-battery-3 { background-position: -96px -176px; }
+#xiblox .xiUi-icon-circle-plus { background-position: 0 -192px; }
+#xiblox .xiUi-icon-circle-minus { background-position: -16px -192px; }
+#xiblox .xiUi-icon-circle-close { background-position: -32px -192px; }
+#xiblox .xiUi-icon-circle-triangle-e { background-position: -48px -192px; }
+#xiblox .xiUi-icon-circle-triangle-s { background-position: -64px -192px; }
+#xiblox .xiUi-icon-circle-triangle-w { background-position: -80px -192px; }
+#xiblox .xiUi-icon-circle-triangle-n { background-position: -96px -192px; }
+#xiblox .xiUi-icon-circle-arrow-e { background-position: -112px -192px; }
+#xiblox .xiUi-icon-circle-arrow-s { background-position: -128px -192px; }
+#xiblox .xiUi-icon-circle-arrow-w { background-position: -144px -192px; }
+#xiblox .xiUi-icon-circle-arrow-n { background-position: -160px -192px; }
+#xiblox .xiUi-icon-circle-zoomin { background-position: -176px -192px; }
+#xiblox .xiUi-icon-circle-zoomout { background-position: -192px -192px; }
+#xiblox .xiUi-icon-circle-check { background-position: -208px -192px; }
+#xiblox .xiUi-icon-circlesmall-plus { background-position: 0 -208px; }
+#xiblox .xiUi-icon-circlesmall-minus { background-position: -16px -208px; }
+#xiblox .xiUi-icon-circlesmall-close { background-position: -32px -208px; }
+#xiblox .xiUi-icon-squaresmall-plus { background-position: -48px -208px; }
+#xiblox .xiUi-icon-squaresmall-minus { background-position: -64px -208px; }
+#xiblox .xiUi-icon-squaresmall-close { background-position: -80px -208px; }
+#xiblox .xiUi-icon-grip-dotted-vertical { background-position: 0 -224px; }
+#xiblox .xiUi-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+#xiblox .xiUi-icon-grip-solid-vertical { background-position: -32px -224px; }
+#xiblox .xiUi-icon-grip-solid-horizontal { background-position: -48px -224px; }
+#xiblox .xiUi-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+#xiblox .xiUi-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+#xiblox  .xiUi-corner-all, #xiblox .xiUi-corner-top, #xiblox .xiUi-corner-left, #xiblox .xiUi-corner-tl { -moz-border-radius-topleft: 0; -webkit-border-top-left-radius: 0; -khtml-border-top-left-radius: 0; border-top-left-radius: 0; }
+#xiblox  .xiUi-corner-all, #xiblox .xiUi-corner-top, #xiblox .xiUi-corner-right, #xiblox .xiUi-corner-tr { -moz-border-radius-topright: 0; -webkit-border-top-right-radius: 0; -khtml-border-top-right-radius: 0; border-top-right-radius: 0; }
+#xiblox  .xiUi-corner-all,#xiblox  .xiUi-corner-bottom, #xiblox .xiUi-corner-left, #xiblox .xiUi-corner-bl { -moz-border-radius-bottomleft: 0; -webkit-border-bottom-left-radius: 0; -khtml-border-bottom-left-radius: 0; border-bottom-left-radius: 0; }
+#xiblox  .xiUi-corner-all, #xiblox .xiUi-corner-bottom, #xiblox .xiUi-corner-right, #xiblox .xiUi-corner-br { -moz-border-radius-bottomright: 0; -webkit-border-bottom-right-radius: 0; -khtml-border-bottom-right-radius: 0; border-bottom-right-radius: 0; }
+
+/* Overlays */
+#xiblox .xiUi-widget-overlay { background: #eeeeee; opacity: .80;filter:Alpha(Opacity=80); }
+#xiblox .xiUi-widget-shadow { margin: -4px 0 0 -4px; padding: 4px; background: #aaaaaa; opacity: .60;filter:Alpha(Opacity=60); -moz-border-radius: 0px; -khtml-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px; }/*
+ * jQuery UI Resizable 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Resizable#theming
+ */
+#xiblox .xiUi-resizable { position: relative;}
+#xiblox .xiUi-resizable-handle { position: absolute;font-size: 0.1px;z-index: 99999; display: block; }
+#xiblox .xiUi-resizable-disabled .xiUi-resizable-handle, #xiblox .xiUi-resizable-autohide .xiUi-resizable-handle { display: none; }
+#xiblox .xiUi-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+#xiblox .xiUi-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+#xiblox .xiUi-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
+#xiblox .xiUi-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+#xiblox .xiUi-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+#xiblox .xiUi-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+#xiblox .xiUi-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+#xiblox .xiUi-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}/*
+ * jQuery UI Selectable 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Selectable#theming
+ */
+#xiblox .xiUi-selectable-helper { position: absolute; z-index: 100; border:1px dotted black; }
+/*
+ * jQuery UI Accordion 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Accordion#theming
+ */
+/* IE/Win - Fix animation bug - #4615 */
+#xiblox .xiUi-accordion { width: 100%; }
+#xiblox .xiUi-accordion .xiUi-accordion-header { cursor: pointer; position: relative; margin-top: 1px; zoom: 1; }
+#xiblox .xiUi-accordion .xiUi-accordion-li-fix { display: inline; }
+#xiblox .xiUi-accordion .xiUi-accordion-header-active { border-bottom: 0 !important; }
+#xiblox .xiUi-accordion .xiUi-accordion-header a { display: block; font-size: 1em; padding: .5em .5em .5em .7em; }
+#xiblox .xiUi-accordion-icons .xiUi-accordion-header a { padding-left: 2.2em; }
+#xiblox .xiUi-accordion .xiUi-accordion-header .xiUi-icon { position: absolute; left: 2px; top: 50%; margin-top: -8px; }
+#xiblox .xiUi-accordion .xiUi-accordion-content { padding: 1em 2.2em; border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow: auto; display: none; zoom: 1; }
+#xiblox .xiUi-accordion .xiUi-accordion-content-active { display: block; }
+/*
+ * jQuery UI Autocomplete 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Autocomplete#theming
+ */
+#xiblox .xiUi-autocomplete { position: absolute; cursor: default; }	
+
+/* workarounds */
+* html #xiblox .xiUi-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+
+/*
+ * jQuery UI Menu 1.8.16
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Menu#theming
+ */
+#xiblox .xiUi-menu {
+	list-style:none;
+	padding: 2px;
+	margin: 0;
+	display:block;
+	float: left;
+}
+#xiblox .xiUi-menu .xiUi-menu {
+	margin-top: -3px;
+}
+#xiblox .xiUi-menu .xiUi-menu-item {
+	margin:0;
+	padding: 0;
+	zoom: 1;
+	float: left;
+	clear: left;
+	width: 100%;
+}
+#xiblox .xiUi-menu .xiUi-menu-item a {
+	text-decoration:none;
+	display:block;
+	padding:.2em .4em;
+	line-height:1.5;
+	zoom:1;
+}
+#xiblox .xiUi-menu .xiUi-menu-item a.xiUi-state-hover,
+#xiblox .xiUi-menu .xiUi-menu-item a.xiUi-state-active {
+	font-weight: normal;
+	margin: -1px;
+}
+/*
+ * jQuery UI Button 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Button#theming
+ */
+#xiblox .xiUi-button { display: inline-block; position: relative; padding: 0; margin-right: .1em; text-decoration: none !important; cursor: pointer; text-align: center; zoom: 1; overflow: visible; } /* the overflow property removes extra width in IE */
+#xiblox .xiUi-button-icon-only { width: 2.2em; } /* to make room for the icon, a width needs to be set here */
+button.xiUi-button-icon-only { width: 2.4em; } /* button elements seem to need a little more width */
+.xiUi-button-icons-only { width: 3.4em; } 
+button.xiUi-button-icons-only { width: 3.7em; } 
+
+/*button text element */
+#xiblox .xiUi-button .xiUi-button-text { display: block; line-height: 1.4;  }
+#xiblox .xiUi-button-text-only .xiUi-button-text { padding: .4em 1em; }
+#xiblox .xiUi-button-icon-only .xiUi-button-text, #xiblox .xiUi-button-icons-only .xiUi-button-text { padding: .4em; text-indent: -9999999px; }
+#xiblox .xiUi-button-text-icon-primary .xiUi-button-text,#xiblox  .xiUi-button-text-icons .xiUi-button-text { padding: .4em 1em .4em 2.1em; }
+#xiblox .xiUi-button-text-icon-secondary .xiUi-button-text, #xiblox .xiUi-button-text-icons .xiUi-button-text { padding: .4em 2.1em .4em 1em; }
+#xiblox .xiUi-button-text-icons .xiUi-button-text { padding-left: 2.1em; padding-right: 2.1em; }
+/* no icon support for input elements, provide padding by default */
+input.xiUi-button { padding: .4em 1em; }
+
+/*button icon element(s) */
+/*.xiUi-button-icon-only .xiUi-icon, .xiUi-button-text-icon-primary .xiUi-icon, .xiUi-button-text-icon-secondary .xiUi-icon, .xiUi-button-text-icons .xiUi-icon, .xiUi-button-icons-only .xiUi-icon { position: absolute; top: 50%; margin-top: -8px; }
+.xiUi-button-icon-only .xiUi-icon { left: 50%; margin-left: -8px; }
+.xiUi-button-text-icon-primary .xiUi-button-icon-primary, .xiUi-button-text-icons .xiUi-button-icon-primary, .xiUi-button-icons-only .xiUi-button-icon-primary { left: .5em; }
+.xiUi-button-text-icon-secondary .xiUi-button-icon-secondary, .xiUi-button-text-icons .xiUi-button-icon-secondary, .xiUi-button-icons-only .xiUi-button-icon-secondary { right: .5em; }
+.xiUi-button-text-icons .xiUi-button-icon-secondary, .xiUi-button-icons-only .xiUi-button-icon-secondary { right: .5em; }
+*/
+
+ /*button icon element(s) */
+#xiblox .xiUi-button-icon-only .xiUi-icon, #xiblox .xiUi-button-text-icon-primary .xiUi-icon, .xiUi-button-text-icon-secondary .xiUi-icon, .xiUi-button-text-icons .xiUi-icon, .xiUi-button-icons-only .xiUi-icon { position: absolute; top: 50%; margin: -8px !important}
+#xiblox .xiUi-button-icon-only .xiUi-icon { left: 50%; margin-left: -12px; }
+#xiblox .xiUi-button-text-icon-primary .xiUi-button-icon-primary, #xiblox .xiUi-button-text-icons .xiUi-button-icon-primary, #xiblox .xiUi-button-icons-only .xiUi-button-icon-primary { left: .35em; }
+#xiblox .xiUi-button-text-icon-secondary .xiUi-button-icon-secondary, #xiblox .xiUi-button-text-icons .xiUi-button-icon-secondary, #xiblox .xiUi-button-icons-only .xiUi-button-icon-secondary { right: .35em; }
+#xiblox .xiUi-button-text-icons .xiUi-button-icon-secondary, #xiblox .xiUi-button-icons-only .xiUi-button-icon-secondary { right: .35em; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*button sets*/
+#xiblox .xiUi-buttonset { margin-right: 7px; }
+#xiblox .xiUi-buttonset .xiUi-button { margin-left: 0; margin-right: -.3em; }
+
+/* workarounds */
+button.xiUi-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra padding in Firefox */
+/*
+ * jQuery UI Dialog 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Dialog#theming
+ */
+#xiblox .xiUi-dialog { position: absolute; padding: .2em; width: 300px; overflow: hidden; }
+#xiblox .xiUi-dialog .xiUi-dialog-titlebar { padding: .4em 1em; position: relative;  }
+#xiblox .xiUi-dialog-titlebar { padding: .4em 1em; position: relative;  }
+#xiblox .xiUi-dialog .xiUi-dialog-title { float: left; margin: .1em 16px .1em 0; } 
+#xiblox .xiUi-dialog-title { float: left; margin: .1em 16px .1em 0; } 
+#xiblox .xiUi-dialog .xiUi-dialog-titlebar-close { position: absolute; right: .3em; top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
+#xiblox .xiUi-dialog-titlebar-close { position: absolute; right: .3em; width: 25px; padding: 1px; height: 24px; }
+#xiblox .xiUi-dialog .xiUi-dialog-titlebar-close span { display: block; margin: 1px; }
+#xiblox  .xiUi-dialog-titlebar-close span { display: block; margin: 1px; }
+#xiblox .xiUi-dialog .xiUi-dialog-titlebar-close:hover, .xiUi-dialog .xiUi-dialog-titlebar-close:focus { padding: 0; }
+#xiblox .xiUi-dialog-titlebar-close:hover, .xiUi-dialog .xiUi-dialog-titlebar-close:focus { padding: 0; }
+#xiblox .xiUi-dialog .xiUi-dialog-content { position: relative; border: 0; padding: .5em 1em; background: none; overflow: auto; zoom: 1; }
+#xiblox .xiUi-dialog-content { position: relative; border: 0; padding: .5em 1em; background: none; overflow: auto; zoom: 1; }
+#xiblox .xiUi-dialog .xiUi-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
+#xiblox  .xiUi-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
+#xiblox .xiUi-dialog .xiUi-dialog-buttonpane .xiUi-dialog-buttonset { float: right; }
+#xiblox .xiUi-dialog-buttonpane .xiUi-dialog-buttonset { float: right; }
+#xiblox .xiUi-dialog .xiUi-dialog-buttonpane button { margin: .5em .4em .5em 0; cursor: pointer; }
+#xiblox .xiUi-dialog-buttonpane button { margin: .5em .4em .5em 0; cursor: pointer; }
+#xiblox .xiUi-dialog .xiUi-resizable-se { width: 14px; height: 14px; right: 2px; bottom: 2px; }
+#xiblox .xiUi-resizable-se { width: 14px; height: 14px; right: 2px; bottom: 2px; }
+#xiblox .xiUi-draggable .xiUi-dialog-titlebar { cursor: move; }
+
+/*
+ * jQuery UI Slider 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Slider#theming
+ */
+#xiblox .xiUi-slider { position: relative; text-align: left; }
+#xiblox .xiUi-slider .xiUi-slider-handle { position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; }
+#xiblox .xiUi-slider .xiUi-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+
+#xiblox .xiUi-slider-horizontal { height: .8em; }
+#xiblox .xiUi-slider-horizontal .xiUi-slider-handle { top: -.3em; margin-left: -.6em; }
+#xiblox .xiUi-slider-horizontal .xiUi-slider-range { top: 0; height: 100%; }
+#xiblox .xiUi-slider-horizontal .xiUi-slider-range-min { left: 0; }
+#xiblox .xiUi-slider-horizontal .xiUi-slider-range-max { right: 0; }
+
+#xiblox .xiUi-slider-vertical { width: .8em; height: 100px; }
+#xiblox .xiUi-slider-vertical .xiUi-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+#xiblox .xiUi-slider-vertical .xiUi-slider-range { left: 0; width: 100%; }
+#xiblox .xiUi-slider-vertical .xiUi-slider-range-min { bottom: 0; }
+#xiblox .xiUi-slider-vertical .xiUi-slider-range-max { top: 0; }/*
+ * jQuery UI Tabs 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+#xiblox .xiUi-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+#xiblox .xiUi-tabs .xiUi-tabs-nav { margin: 0; padding: .2em .2em 0; }
+#xiblox .xiUi-tabs .xiUi-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+#xiblox .xiUi-tabs .xiUi-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+#xiblox .xiUi-tabs .xiUi-tabs-nav li.xiUi-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+#xiblox .xiUi-tabs .xiUi-tabs-nav li.xiUi-tabs-selected a, #xiblox .xiUi-tabs .xiUi-tabs-nav li.xiUi-state-disabled a, #xiblox .xiUi-tabs .xiUi-tabs-nav li.xiUi-state-processing a { cursor: text; }
+#xiblox .xiUi-tabs .xiUi-tabs-nav li a, #xiblox .xiUi-tabs.xiUi-tabs-collapsible .xiUi-tabs-nav li.xiUi-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+#xiblox .xiUi-tabs .xiUi-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }
+#xiblox .xiUi-tabs .xiUi-tabs-hide { display: none !important; }
+/*
+ * jQuery UI Datepicker 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Datepicker#theming
+ */
+#xiblox .xiUi-datepicker { width: 17em; padding: .2em .2em 0; display: none; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-header { position:relative; padding:.2em 0; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-prev, #xiblox .xiUi-datepicker .xiUi-datepicker-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-prev-hover, #xiblox .xiUi-datepicker .xiUi-datepicker-next-hover { top: 1px; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-prev { left:2px; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-next { right:2px; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-prev-hover { left:1px; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-next-hover { right:1px; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-prev span, #xiblox .xiUi-datepicker .xiUi-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+#xiblox .xiUi-datepicker .xiUi-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-title select { font-size:1em; margin:1px 0; }
+#xiblox .xiUi-datepicker select.xiUi-datepicker-month-year {width: 100%;}
+#xiblox .xiUi-datepicker select.xiUi-datepicker-month, 
+#xiblox .xiUi-datepicker select.xiUi-datepicker-year { width: 49%;}
+#xiblox .xiUi-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
+#xiblox .xiUi-datepicker th { padding: .7em .3em; text-align: center; font-weight: normal; border: 0;  }
+#xiblox .xiUi-datepicker td { border: 0; padding: 1px; }
+#xiblox .xiUi-datepicker td span, #xiblox .xiUi-datepicker td a { display: block; padding: .2em; text-align: right; text-decoration: none; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-buttonpane button.xiUi-datepicker-current { float:left; }
+
+/* with multiple calendars */
+#xiblox .xiUi-datepicker.xiUi-datepicker-multi { width:auto; }
+#xiblox .xiUi-datepicker-multi .xiUi-datepicker-group { float:left; }
+#xiblox .xiUi-datepicker-multi .xiUi-datepicker-group table { width:95%; margin:0 auto .4em; }
+#xiblox .xiUi-datepicker-multi-2 .xiUi-datepicker-group { width:50%; }
+#xiblox .xiUi-datepicker-multi-3 .xiUi-datepicker-group { width:33.3%; }
+#xiblox .xiUi-datepicker-multi-4 .xiUi-datepicker-group { width:25%; }
+#xiblox .xiUi-datepicker-multi .xiUi-datepicker-group-last .xiUi-datepicker-header { border-left-width:0; }
+#xiblox .xiUi-datepicker-multi .xiUi-datepicker-group-middle .xiUi-datepicker-header { border-left-width:0; }
+#xiblox .xiUi-datepicker-multi .xiUi-datepicker-buttonpane { clear:left; }
+#xiblox .xiUi-datepicker-row-break { clear:both; width:100%; font-size:0em; }
+
+/* RTL support */
+#xiblox .xiUi-datepicker-rtl { direction: rtl; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-prev { right: 2px; left: auto; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-next { left: 2px; right: auto; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-prev:hover { right: 1px; left: auto; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-next:hover { left: 1px; right: auto; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-buttonpane { clear:right; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-buttonpane button { float: left; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-buttonpane button.xiUi-datepicker-current { float:right; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-group { float:right; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-group-last .xiUi-datepicker-header { border-right-width:0; border-left-width:1px; }
+#xiblox .xiUi-datepicker-rtl .xiUi-datepicker-group-middle .xiUi-datepicker-header { border-right-width:0; border-left-width:1px; }
+
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+#xiblox .xiUi-datepicker-cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 200px; /*must have*/
+    height: 200px; /*must have*/
+}/*
+ * jQuery UI Progressbar 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Progressbar#theming
+ */
+#xiblox .xiUi-progressbar { height:2em; text-align: left; }
+#xiblox .xiUi-progressbar .xiUi-progressbar-value {margin: -1px; height:100%; }
+
+/* General */
+html, body{background-color:#ffffff;}
+#xiblox  .xiUi-widget{font-family:"Segoe UI", Helvetica, Verdana;}
+
+/* Interaction states
+----------------------------------*/
+#xiblox .xiUi-state-default, #xiblox .xiUi-widget-content .xiUi-state-default, #xiblox .xiUi-widget-header .xiUi-state-default { border:none;background:inherit; font-weight: bold; text-decoration:none; }
+#xiblox .xiUi-state-default a, #xiblox .xiUi-state-default a:link, #xiblox .xiUi-state-default a:visited { text-decoration: none; }
+#xiblox .xiUi-state-hover, #xiblox .xiUi-widget-content .xiUi-state-hover, #xiblox .xiUi-widget-header .xiUi-state-hover, #xiblox .xiUi-state-focus, #xiblox .xiUi-widget-content .xiUi-state-focus, #xiblox .xiUi-widget-header .xiUi-state-focus { font-weight: bold; color: #ffffff; border-width:2px;}
+#xiblox .xiUi-state-hover a, #xiblox .xiUi-state-hover a:hover { color: #ffffff; text-decoration: none; }
+#xiblox .xiUi-state-active, #xiblox .xiUi-widget-content .xiUi-state-active, #xiblox .xiUi-widget-header .xiUi-state-active { border: 1px solid #dddddd; font-weight: bold; color: #ff0084;}
+#xiblox .xiUi-state-active a, #xiblox .xiUi-state-active a:link, #xiblox .xiUi-state-active a:visited { color: #ff0084; text-decoration: none; }
+#xiblox .xiUi-widget :active { outline: none; }
+
+/* Accordion */
+#xiblox .xiUi-accordion-header{border:2px solid;}
+#xiblox .xiUi-accordion .xiUi-accordion-header{margin-top:2px;}
+#xiblox .xiUi-accordion-content{border:2px solid;border-top:none;margin-bottom:3px !important;}
+#xiblox .xiUi-accordion .xiUi-accordion-header a { font-size: 1.0em; padding: .6em .3em .5em 2.9em; font-weight:bold;}
+#xiblox .xiUi-accordion > .xiUi-state-active a, #xiblox .xiUi-accordion > div > h3.xiUi-state-active a  { padding-bottom:.8em;}
+/*.xiUi-accordion .xiUi-accordion-header .xiUi-icon{margin-top:-12px;}*/
+#xiblox .xiUi-accordion > .xiUi-state-active, #xiblox .xiUi-accordion > div > h3.xiUi-state-active{border-bottom:none !important;}
+#xiblox .xiUi-accordion-header > .xiUi-icon{margin:4px;}
+
+/* Tabs */
+#xiblox  .xiUi-tabs{padding:0;border:none;position:relative;top:-3px;}
+#xiblox  .xiUi-tabs-nav{padding:0px 0px 0px 0px !important;border:none;border-bottom:2px solid;background-color:#ffffff;}
+#xiblox .xiUi-tabs-nav .xiUi-state-default{border:none;padding:0px !important;margin-right:2px !important;background:none !important;}
+#xiblox .xiUi-tabs-nav .xiUi-state-default a{border:2px solid;position:relative;top:2px;font-weight:bold;margin-bottom:4px;height:16px;}
+/*.xiUi-tabs-nav .xiUi-tabs-selected a{border:2px solid;height:1.8em;border-bottom:none !important;}*/
+#xiblox .xiUi-tabs-nav .xiUi-state-active a{border:2px solid;border-bottom:none !important;margin-bottom:0;height:22px;}
+#xiblox .xiUi-tabs .xiUi-widget-content{border:2px solid !important;border-top:none !important;}
+#xiblox .xiUi-tabs .xiUi-widget-content .xiUi-tabs {border:none !important;}
+#xiblox .xiUi-tabs-nav .xiUi-state-hover{border:none;}
+
+
+/* Dialog */
+#xiblox .xiUi-dialog-titlebar {border:none;border-bottom-width:2px;padding:.6em 1em .6em 1em !important;font-weight:bold;font-size:1.1em;}
+#xiblox .xiUi-dialog-buttonpane{border-top-width:2px !important;margin-top:0 !important;}
+#xiblox .xiUi-dialog .xiUi-dialog-titlebar-close{width:24px;height:24px;margin:-13px 0px 0px 0px;padding:0;}
+#xiblox .xiUi-dialog-titlebar-close > .xiUi-icon{}
+
+/* Datepicker*/
+#xiblox .xiUi-datepicker {border:2px solid;padding:0 !important;}
+#xiblox .xiUi-datepicker .xiUi-datepicker-header{border:none;padding:.4em 1em .4em 1em;}
+#xiblox .xiUi-datepicker .xiUi-datepicker-header .xiUi-state-default, #xiblox .xiUi-datepicker .xiUi-datepicker-header .xiUi-state-hover{background:none;border:none;padding:0;}
+#xiblox .xiUi-datepicker .xiUi-datepicker-prev, #xiblox .xiUi-datepicker .xiUi-datepicker-next{width:24px;height:24px;margin:0;}
+#xiblox .xiUi-datepicker .xiUi-datepicker-prev span, #xiblox .xiUi-datepicker .xiUi-datepicker-next span{position:relative;top:0;left:0;margin:0;}
+#xiblox .xiUi-datepicker .xiUi-datepicker-prev-hover { left:2px;top:2px; }
+#xiblox .xiUi-datepicker .xiUi-datepicker-next-hover { right:2px;top:2px; }
+#xiblox .xiUi-datepicker table {margin:0px;border:1px solid;}
+#xiblox .xiUi-datepicker-calendar .xiUi-state-default, #xiblox .xiUi-datepicker-calendar .xiUi-state-hover, #xiblox .xiUi-datepicker-calendar .xiUi-state-highlight, #xiblox .xiUi-datepicker-calendar .xiUi-state-active{border-width:2px;}
+#xiblox .xiUi-datepicker .xiUi-icon{margin:4px !important;}
+
+/* Button */
+#xiblox .xiUi-button{border-width:2px !important;border-bottom-style:solid;font-weight:bold !important;}
+
+#xiblox .xiUi-buttonset .xiUi-button { margin-left: 0; margin-right: -1px; }
+
+/* Additional states */
+#xiblox .xiUi-state-highlight{border:2px solid;}
+#xiblox .xiUi-state-error{border:2px solid;}
+/*.xiUi-state-highlight .xiUi-icon, .xiUi-state-error .xiUi-icon{position:relative;top:-4px;}*/
+
+/* Slider */
+#xiblox .xiUi-slider{border:none;}
+#xiblox .xiUi-slider .xiUi-slider-handle{width:.8em;height:.8em;border:none;margin:-.4em;}
+#xiblox .xiUi-slider-horizontal .xiUi-slider-handle{margin-top:0; top:0;}
+#xiblox .xiUi-slider-vertical .xiUi-slider-handle{margin-left:0;left:0;}
+
+/* Progressbar */
+#xiblox .xiUi-progressbar{border:none;height:0.8em;}
+#xiblox .xiUi-progressbar .xiUi-progressbar-value{border:none;}
+
+/* Autocomplete */
+#xiblox .xiUi-autocomplete {border:solid 2px #bbbbbb;padding:0;}
+#xiblox .xiUi-autocomplete .xiUi-menu-item a{padding:5px;border:none;margin:0 !important;}
+
+/* Icon states */
+#xiblox .xiUi-icon { width: 16px; height: 16px; }
+/* General */
+#xiblox .xiUi-icon, #xiblox .xiUi-widget-content .xiUi-icon, #xiblox .xiUi-widget-header .xiUi-icon  {background-image:url(../../images/xiUi-icons_d4d4d4_0.png)}
+#xiblox .xiUi-state-default .xiUi-icon {background-image:url(../../images/xiUi-icons_525252_0.png)}
+#xiblox .xiUi-state-active .xiUi-icon, #xiblox .xiUi-state-hover .xiUi-icon{background-image:url(../../images/xiUi-icons_ffffff_0.png);}
+#xiblox .xiUi-widget-overlay{background:#ffffff;}
+#xiblox   .xiUi-widget-content{color:#525252;}
+
+
+
+
+
+/* Button states */
+#xiblox .xiUi-state-default, #xiblox .xiUi-widget-content .xiUi-state-default{background-color:#d4d4d4;border-color:#d4d4d4;color:#525252;}
+#xiblox .xiUi-state-focus, #xiblox .xiUi-widget-content .xiUi-state-focus{background-color:#66B3FF;border-color:#66B3FF;color:#ffffff;}
+#xiblox .xiUi-state-hover, #xiblox .xiUi-widget-content .xiUi-state-hover{background-color:#66B3FF;border-color:#66B3FF;color:#ffffff;}
+#xiblox .xiUi-state-active, #xiblox .xiUi-widget-content .xiUi-state-active{background-color:#3399ff;border-color:#3399ff;color:#ffffff;}
+
+
+/* Accordion */
+#xiblox .xiUi-accordion-content{border-color:#d4d4d4;background:#ffffff}
+#xiblox .xiUi-accordion-header.xiUi-state-active, #xiblox .xiUi-accordion-header.xiUi-state-active.xiUi-state-hover{background-color:#ffffff !important;color:#525252;border-color:#d4d4d4 !important;background-image:url(../../images/xiUi-icons_d4d4d4_0.png) !important;background-position: -230px -213px !important;}
+#xiblox .xiUi-accordion-header.xiUi-state-active a{ color: #525252 !important;}
+#xiblox .xiUi-accordion-header.xiUi-state-default{border-color:#3399ff;background:#3399ff;}
+#xiblox .xiUi-accordion-header.xiUi-state-default a{ color: #ffffff;}
+#xiblox .xiUi-accordion-header.xiUi-state-hover{background:#66B3FF;border-color:#66B3FF;}
+#xiblox .xiUi-accordion-header.xiUi-state-hover a{color:#ffffff;}
+#xiblox .xiUi-accordion-header.xiUi-state-active .xiUi-icon{background-image:url(../../images/xiUi-icons_d4d4d4_0.png) !important;}
+#xiblox .xiUi-accordion-header.xiUi-state-default .xiUi-icon{background-image:url(../../images/xiUi-icons_ffffff_0.png);}
+#xiblox .xiUi-accordion-header.xiUi-state-hover .xiUi-icon{background-image:url(../../images/xiUi-icons_66B3FF_0.png);}
+#xiblox .xiUi-accordion-header{background-image:url(../../images/xiUi-icons_ffffff_0.png) !important;background-position: -230px -214px !important;background-repeat:no-repeat !important;}
+#xiblox .xiUi-accordion-header.xiUi-state-hover{background-image:url(../../images/xiUi-icons_ffffff_0.png) !important;background-position: -230px -166px !important;}
+
+
+
+/* Tabs states */
+#xiblox .xiUi-tabs-nav > .xiUi-state-default a{border-color:#ccc;background:#aaa;color:#ffffff;}
+#xiblox .xiUi-tabs-nav > .xiUi-state-active a{border-color:#d4d4d4 !important;background:#ffffff !important;color:#525252 !important;}
+#xiblox .xiUi-tabs-nav > .xiUi-state-hover a{background:#66B3FF;border-color:#66B3FF;color:#ffffff;}
+#xiblox .xiUi-tabs-nav > .xiUi-state-focus a{background:#66B3FF;border-color:;color:#ffffff;}
+#xiblox .xiUi-tabs .xiUi-widget-content{border-color:#d4d4d4 !important;}
+#xiblox  .xiUi-tabs-nav{border-color:#d4d4d4;}
+
+/* Dialog states */
+#xiblox .xiUi-dialog{border-color:#3399ff;background-color:#ffffff !important;}
+#xiblox .xiUi-dialog-titlebar{border-color:#3399ff;color:#ffffff;background-color:#3399ff;cursor: move; }
+#xiblox .xiUi-dialog-buttonpane{border-color:#3399ff !important;background-color:#ffffff;}
+#xiblox .xiUi-dialog-content{background-color:#ffffff !important;}
+#xiblox .xiUi-dialog-titlebar .xiUi-icon{background-image:url(../../images/xiUi-icons_ffffff_0.png);}
+#xiblox .xiUi-dialog-titlebar .xiUi-state-hover .xiUi-icon{background-image:url(../../images/xiUi-icons_3399ff_0.png) !important;}
+#xiblox .xiUi-dialog-titlebar-close{background-image:url(../../images/xiUi-icons_ffffff_0.png) !important;background-position: -232px -216px !important;}
+#xiblox .xiUi-dialog-titlebar-close.xiUi-state-hover{background:url(../../images/xiUi-icons_ffffff_0.png) !important;background-position: -232px -168px !important;}
+
+
+
+
+
+/* Slider */
+#xiblox .xiUi-slider{background:#d4d4d4;}
+#xiblox .xiUi-slider .xiUi-slider-range{background:#3399ff;}
+#xiblox .xiUi-slider .xiUi-state-default{background-color:#000000;}
+#xiblox .xiUi-slider .xiUi-state-active{background-color:#525252 !important;}
+#xiblox .xiUi-slider .xiUi-state-focus{background-color:#000000;}
+#xiblox .xiUi-slider .xiUi-state-hover{background-color:#525252;}
+
+/* Progressbar */
+#xiblox .xiUi-progressbar{background:#d4d4d4;}
+#xiblox .xiUi-progressbar .xiUi-progressbar-value{background-color:#3399ff;}
+
+/* Autocomplete */
+
+#xiblox .xiUi-autocomplete {border-color:#525252;}
+#xiblox .xiUi-autocomplete a{background-color:#ffffff;color:#525252;}
+#xiblox .xiUi-autocomplete .xiUi-state-hover{background:#3399ff;color:#ffffff;}
+
+/* Datepicker */
+#xiblox .xiUi-datepicker {border-color:#3399ff;}
+#xiblox .xiUi-datepicker .xiUi-datepicker-header{background-color:#3399ff;color:#ffffff;}
+#xiblox .xiUi-datepicker table {border-color:#ffffff; }
+#xiblox .xiUi-datepicker-calendar{background:#ffffff;}
+#xiblox .xiUi-datepicker-calendar .xiUi-state-default{background-color:#d4d4d4;border-color:#d4d4d4;color:#525252;}
+#xiblox .xiUi-datepicker-calendar .xiUi-state-hover{background-color:#66B3FF !important;border-color:#66B3FF !important;color:#ffffff !important;}
+#xiblox .xiUi-datepicker-calendar .xiUi-state-highlight{background-color:#d4d4d4;border-color:#3399ff;color:#ffffff;}
+#xiblox .xiUi-datepicker-calendar .xiUi-state-active{background-color:#3399ff;border-color:#3399ff;color:#ffffff;}
+#xiblox .xiUi-datepicker .xiUi-icon {background-image:url(../../images/xiUi-icons_ffffff_0.png);}
+
+#xiblox .xiUi-datepicker .xiUi-state-hover .xiUi-icon {background-image:url(../../images/xiUi-icons_3399ff_0.png)}
+#xiblox .xiUi-datepicker-next, #xiblox .xiUi-datepicker-prev{background-image:url(../../images/xiUi-icons_ffffff_0.png);background-position: -232px -216px;}
+#xiblox .xiUi-datepicker-next-hover, #xiblox .xiUi-datepicker-prev-hover{background-image:url(../../images/xiUi-icons_ffffff_0.png) !important;background-position: -232px -168px !important;opacity:1;}
+#xiblox .xiUi-datepicker-next.xiUi-state-disabled, #xiblox .xiUi-datepicker-prev.xiUi-state-disabled{background-image:url(../../images/xiUi-icons_ffffff_0.png);background-position: -232px -216px;}
+
+
+
+/* Highlight */
+#xiblox .xiUi-state-highlight{border-color:#efdca9;color:#525252;background:#efdca9;}
+#xiblox .xiUi-state-highlight .xiUi-icon{background-image:url(../../images/xiUi-icons_525252_0.png);}
+
+/* Error */
+#xiblox .xiUi-state-error{border-color:#c31d1d;color:#ffffff;background:#c31d1d;}
+#xiblox .xiUi-state-error .xiUi-icon{background-image:url(../../images/xiUi-icons_ffffff_0.png);}
+#xiblox {
+	
+	background-color: #ffffff !important;	
+	color: #525252;
+	border: 2px solid #DCDFE1;
+	padding: 0;
+	
+}
+#gbox_xiblox {
+	width: 930px !important;
+	font-family: "Segoe UI", Helvetica, Verdana;
+	border: 1px solid #dddddd;
+	background: #ffffff;
+}
+#gview_xiblox {
+	width: 930px !important;
+}
+#gview_xiblox  .xiUi-jqgrid-hdiv{
+	width: 930px !important;
+}
+#gview_xiblox .xiUi-jqgrid-bdiv{
+	width: 930px !important;
+}
+#xiblox_pagered {
+	width: 930px !important;
+}
+h3 {
+	padding: 7px;
+	margin: 0;
+}

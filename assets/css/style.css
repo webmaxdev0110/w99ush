@@ -1,0 +1,1366 @@
+@charset "utf-8";
+/* CSS Document */
+
+#toplevel_page_XIBLOX-xi_blox ul > li:nth-child(5) { display: none; }
+#toplevel_page_XIBLOX-xi_blox ul > li:nth-child(6) { display: none; }
+#toplevel_page_XIBLOX-xi_blox ul > li:nth-child(7) { display: none; }
+#toplevel_page_XIBLOX-xi_blox ul > li:nth-child(8) { display: none; }
+#toplevel_page_XIBLOX-xi_blox ul > li:nth-child(9) { display: none; }
+#toplevel_page_XIBLOX-xi_blox ul > li:nth-child(10) { display: none; }
+
+
+.error {
+	color:#FF0000;
+	font-size:12px;
+	
+}
+
+.xi_page_tree {
+	background-color:#FFFFFF;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+#xi_select_status {
+	background-color:#FFFFCC;
+	-webkit-border-radius: 3px;
+	-moz-border: 3px;
+	border-radius: 3px;
+	border: 1px solid #aaaaaa;
+	padding:10px;
+}
+
+#xi_add_new {
+	width : 80px;
+	height : 40px;
+	-webkit-border-radius: 3px;
+	-moz-border: 3px;
+	border-radius: 3px;
+	background-color:#efefef;
+	text-decoration:none;
+	border:1px solid #cccccc;
+	padding:5px;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:12px;
+	color:#FF0000;
+}
+
+#xi_add_new:hover {
+	background-color:#CCCCCC;
+	cursor:pointer;
+}
+
+
+#xi_edit_tab {
+	display:none;
+}
+
+#xi_delete {
+	-webkit-border-radius: 3px;
+	-moz-border: 3px;
+	border-radius: 3px;
+	background-color:#efefef;
+	text-decoration:none;
+	border:1px solid #cccccc;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:10px;
+	color:#FF0000;
+}
+
+#xi_delete:hover {
+	background-color:#CCCCCC;
+	cursor:pointer;
+}
+
+#xi_preview_img {
+	color:#CC0066;
+	opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   padding : 2px;
+   padding-left : 5px;
+   padding-right : 5px;
+   text-decoration:none;
+   -webkit-border-radius: 3px;
+	-moz-border: 3px;
+	border-radius: 3px;
+}
+
+#xi_preview_img:hover {
+	background-color:#CCCCCC;
+	opacity: 0.5;
+}
+
+#xi_preview_page {
+	color:#CC0066;
+	opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   padding : 2px;
+   padding-left : 5px;
+   padding-right : 5px;
+   text-decoration:none;
+   -webkit-border-radius: 3px;
+	-moz-border: 3px;
+	border-radius: 3px;
+	font-size:9px;
+}
+
+#xi_preview_page:hover {
+	background-color:#CCCCCC;
+	opacity: 0.5;
+}
+
+#xi_post_form a {
+	text-decoration:none;
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+#xi_post_form a:hover {
+	color : #ff0000;
+	opacity: 0.5;
+}
+
+#xi_tab_contents {
+	resize:none;
+	width:565px;
+	height : 200px;
+}
+
+#xi_tab_custom {
+	resize:none;
+	width:565px;
+	height : 200px;
+}
+
+#xi_edit_tab_contents {
+	resize:none;
+	width:400px;
+	height : 200px;
+}
+
+#xi_edit_tab_custom {
+	resize:none;
+	width:400px;
+	height : 200px;
+}
+
+#xi_navigation li a {
+	padding-left : 5px;
+
+}
+
+#xi_status {
+	display:none;
+}
+
+#xi_title {
+	background-image: linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	background-image: -o-linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	background-image: -moz-linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	background-image: -webkit-linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	background-image: -ms-linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.01, rgb(179,179,179)),
+		color-stop(0.51, rgb(242,239,242))
+	);
+}
+
+#xi_categories {
+	background-image: linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	background-image: -o-linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	background-image: -moz-linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	background-image: -webkit-linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	background-image: -ms-linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.01, rgb(179,179,179)),
+		color-stop(0.51, rgb(242,239,242))
+	);
+}
+
+#xi_category {
+	background-image: linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	background-image: -o-linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	background-image: -moz-linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	background-image: -webkit-linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	background-image: -ms-linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.01, rgb(179,179,179)),
+		color-stop(0.51, rgb(242,239,242))
+	);
+}
+
+#xi_cb {
+	background-image: linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	background-image: -o-linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	background-image: -moz-linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	background-image: -webkit-linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	background-image: -ms-linear-gradient(bottom, rgb(179,179,179) 1%, rgb(242,239,242) 51%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.01, rgb(179,179,179)),
+		color-stop(0.51, rgb(242,239,242))
+	);
+}
+
+#blox_list {
+	font-size:16px;
+	float:left;
+	padding:5px;
+	
+}
+
+#xi_editor {
+	width:60%;
+	border:1px solid #CCC;
+	float:left;
+}
+
+.clear {
+	clear:both;
+}
+
+#managefield {
+	border:1px solid #CCC;
+	padding:10px;
+
+	background:#efefef;
+}
+
+#blox_title {
+	font-size:18px;
+}
+
+#blox_file_editor {
+	width:100%;
+	min-width:100%;
+	max-width:100%;
+	height:400px;
+}
+#old_file_viewer {
+	width:100%;
+	min-width:100%;
+	max-width:100%;
+	height:350px;
+}
+
+#blox_desc_editor {
+	width:100%;
+	min-width:100%;
+	max-width:100%;
+	height:120px;
+}
+
+#blox_content_editor {
+	width:100%;
+	min-width:100%;
+	max-width:100%;
+	height:400px;
+}
+
+#blox_content {
+	width : 400px;
+}
+
+#blox_menu {
+	width:150px;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * General page setup
+ */
+#dt_example {
+	font: 80%/1.45em "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	background-color: #fff;
+}
+
+
+#dt_example #container {
+	width: 800px;
+	margin: 30px auto;
+	padding: 0;
+}
+
+
+#dt_example #footer {
+	margin: 50px auto 0 auto;
+	padding: 0;
+}
+
+#dt_example #demo {
+	margin: 30px auto 0 auto;
+}
+
+#dt_example .demo_jui {
+	margin: 30px auto 0 auto;
+}
+
+#dt_example .big {
+	font-size: 1.3em;
+	font-weight: bold;
+	line-height: 1.6em;
+	color: #4E6CA3;
+}
+
+#dt_example .spacer {
+	height: 20px;
+	clear: both;
+}
+
+#dt_example .clear {
+	clear: both;
+}
+
+#dt_example pre {
+	padding: 15px;
+	background-color: #F5F5F5;
+	border: 1px solid #CCCCCC;
+}
+
+#dt_example h1 {
+	margin-top: 2em;
+	font-size: 1.3em;
+	font-weight: normal;
+	line-height: 1.6em;
+	color: #4E6CA3;
+	border-bottom: 1px solid #B0BED9;
+	clear: both;
+}
+
+#dt_example h2 {
+	font-size: 1.2em;
+	font-weight: normal;
+	line-height: 1.6em;
+	color: #4E6CA3;
+	clear: both;
+}
+
+#dt_example a {
+	color: #0063DC;
+	text-decoration: none;
+}
+
+#dt_example a:hover {
+	text-decoration: underline;
+}
+
+#dt_example ul {
+	color: #4E6CA3;
+}
+
+.css_right {
+	float: right;
+}
+
+.css_left {
+	float: left;
+}
+
+.demo_links {
+	float: left;
+	width: 50%;
+	margin-bottom: 1em;
+}
+
+#demo_info {
+	padding: 5px;
+	border: 1px solid #B0BED9;
+	height: 100px;
+	width: 100%;
+	overflow: auto;
+}
+
+#dt_example code {
+	font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+	padding: 2px 4px !important;
+	white-space: nowrap;
+	font-size: 0.9em;
+
+	color: #D14;
+	background-color: #F7F7F9;
+
+	border: 1px solid #E1E1E8;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+}
+
+/*
+ *  File:         demo_table_jui.css
+ *  CVS:          $Id$
+ *  Description:  CSS descriptions for DataTables demo pages
+ *  Author:       Allan Jardine
+ *  Created:      Tue May 12 06:47:22 BST 2009
+ *  Modified:     $Date$ by $Author$
+ *  Language:     CSS
+ *  Project:      DataTables
+ *
+ *  Copyright 2009 Allan Jardine. All Rights Reserved.
+ *
+ * ***************************************************************************
+ * DESCRIPTION
+ *
+ * The styles given here are suitable for the demos that are used with the standard DataTables
+ * distribution (see www.datatables.net). You will most likely wish to modify these styles to
+ * meet the layout requirements of your site.
+ *
+ * Common issues:
+ *   'full_numbers' pagination - I use an extra selector on the body tag to ensure that there is
+ *     no conflict between the two pagination types. If you want to use full_numbers pagination
+ *     ensure that you either have "example_alt_pagination" as a body class name, or better yet,
+ *     modify that selector.
+ *   Note that the path used for Images is relative. All images are by default located in
+ *     ../images/ - relative to this CSS file.
+ */
+
+
+/*
+ * jQuery UI specific styling
+ */
+
+.paging_two_button .xiUi-button {
+	float: left;
+	cursor: pointer;
+	* cursor: hand;
+}
+
+.paging_full_numbers .xiUi-button {
+	padding: 2px 6px;
+	margin: 0;
+	cursor: pointer;
+	* cursor: hand;
+	color: #333 !important;
+}
+
+.dataTables_paginate .xiUi-button {
+	margin-right: -0.1em !important;
+}
+
+.paging_full_numbers {
+	width: 350px !important;
+}
+
+.dataTables_wrapper .xiUi-toolbar {
+	padding: 5px;
+}
+
+.dataTables_paginate {
+	width: auto;
+}
+
+.dataTables_info {
+	padding-top: 3px;
+}
+
+table.display thead th {
+	padding: 3px 0px 3px 10px;
+	cursor: pointer;
+	* cursor: hand;
+}
+
+div.dataTables_wrapper .xiUi-widget-header {
+	font-weight: normal;
+}
+
+
+/*
+ * Sort arrow icon positioning
+ */
+table.display thead th div.DataTables_sort_wrapper {
+	position: relative;
+	padding-right: 20px;
+}
+
+table.display thead th div.DataTables_sort_wrapper span {
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+	right: 0;
+	display: none;
+}
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *
+ * Everything below this line is the same as demo_table.css. This file is
+ * required for 'cleanliness' of the markup
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables features
+ */
+
+.dataTables_wrapper {
+	position: relative;
+	clear: both;
+}
+
+.dataTables_processing {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 250px;
+	margin-left: -125px;
+	border: 1px solid #ddd;
+	text-align: center;
+	color: #999;
+	font-size: 11px;
+	padding: 2px 0;
+}
+
+.dataTables_length {
+	width: 40%;
+	float: left;
+}
+
+.dataTables_filter {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+.dataTables_info {
+	width: 50%;
+	float: left;
+}
+
+.dataTables_paginate {
+	float: right;
+	text-align: right;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables display
+ */
+table.display {
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+	border-collapse: collapse;
+}
+
+table.display tfoot th {
+	padding: 3px 0px 3px 10px;
+	font-weight: bold;
+	font-weight: normal;
+}
+
+table.display tr.heading2 td {
+	border-bottom: 1px solid #aaa;
+}
+
+table.display td {
+	padding: 3px 10px;
+}
+
+table.display td.center {
+	text-align: center;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables sorting
+ */
+
+.sorting_asc {
+	background: url('../images/sort_asc.png') no-repeat center right;
+}
+
+.sorting_desc {
+	background: url('../images/sort_desc.png') no-repeat center right;
+}
+
+.sorting {
+	background: url('../images/sort_both.png') no-repeat center right;
+}
+
+.sorting_asc_disabled {
+	background: url('../images/sort_asc_disabled.png') no-repeat center right;
+}
+
+.sorting_desc_disabled {
+	background: url('../images/sort_desc_disabled.png') no-repeat center right;
+}
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables row classes
+ */
+table.display tr.odd.gradeA {
+	background-color: #ddffdd;
+}
+
+table.display tr.even.gradeA {
+	background-color: #eeffee;
+}
+
+
+
+
+table.display tr.odd.gradeA {
+	background-color: #ddffdd;
+}
+
+table.display tr.even.gradeA {
+	background-color: #eeffee;
+}
+
+table.display tr.odd.gradeC {
+	background-color: #ddddff;
+}
+
+table.display tr.even.gradeC {
+	background-color: #eeeeff;
+}
+
+table.display tr.odd.gradeX {
+	background-color: #ffdddd;
+}
+
+table.display tr.even.gradeX {
+	background-color: #ffeeee;
+}
+
+table.display tr.odd.gradeU {
+	background-color: #ddd;
+}
+
+table.display tr.even.gradeU {
+	background-color: #eee;
+}
+
+
+tr.odd {
+	background-color: #E2E4FF;
+}
+
+tr.even {
+	background-color: white;
+}
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Misc
+ */
+.dataTables_scroll {
+	clear: both;
+}
+
+.dataTables_scrollBody {
+	-webkit-overflow-scrolling: touch;
+}
+
+.xi_top, .xi_bottom {
+	padding: 15px;
+	background-color: #F5F5F5;
+	border: 1px solid #CCCCCC;
+}
+
+.xi_top .dataTables_info {
+	float: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.dataTables_empty {
+	text-align: center;
+}
+
+tfoot input {
+	margin: 0.5em 0;
+	width: 100%;
+	color: #444;
+}
+
+tfoot input.search_init {
+	color: #999;
+}
+
+td.group {
+	background-color: #d1cfd0;
+	border-bottom: 2px solid #A19B9E;
+	border-top: 2px solid #A19B9E;
+}
+
+td.details {
+	background-color: #d1cfd0;
+	border: 2px solid #A19B9E;
+}
+
+
+.example_alt_pagination div.dataTables_info {
+	width: 40%;
+}
+
+.paging_full_numbers a.paginate_button,
+ 	.paging_full_numbers a.paginate_active {
+	border: 1px solid #aaa;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 2px 5px;
+	margin: 0 3px;
+	cursor: pointer;
+	*cursor: hand;
+	color: #333 !important;
+}
+
+.paging_full_numbers a.paginate_button {
+	background-color: #ddd;
+}
+
+.paging_full_numbers a.paginate_button:hover {
+	background-color: #ccc;
+	text-decoration: none !important;
+}
+
+.paging_full_numbers a.paginate_active {
+	background-color: #99B3FF;
+}
+
+table.display tr.even.row_selected td {
+	background-color: #B0BED9;
+}
+
+table.display tr.odd.row_selected td {
+	background-color: #9FAFD1;
+}
+
+
+/*
+ * Sorting classes for columns
+ */
+/* For the standard odd/even */
+tr.odd td.sorting_1 {
+	background-color: #DDD;
+}
+
+tr.odd td.sorting_2 {
+	background-color: #DEDEDE;
+}
+
+tr.odd td.sorting_3 {
+	background-color: #E0E2FF;
+}
+
+tr.even td.sorting_1 {
+	background-color: #EAEBFF;
+}
+
+tr.even td.sorting_2 {
+	background-color: #F2F3FF;
+}
+
+tr.even td.sorting_3 {
+	background-color: #F9F9FF;
+}
+
+
+/* For the Conditional-CSS grading rows */
+/*
+ 	Colour calculations (based off the main row colours)
+  Level 1:
+		dd > c4
+		ee > d5
+	Level 2:
+	  dd > d1
+	  ee > e2
+ */
+tr.odd.gradeA td.sorting_1 {
+	background-color: #c4ffc4;
+}
+
+tr.odd.gradeA td.sorting_2 {
+	background-color: #d1ffd1;
+}
+
+tr.odd.gradeA td.sorting_3 {
+	background-color: #d1ffd1;
+}
+
+tr.even.gradeA td.sorting_1 {
+	background-color: #d5ffd5;
+}
+
+tr.even.gradeA td.sorting_2 {
+	background-color: #e2ffe2;
+}
+
+tr.even.gradeA td.sorting_3 {
+	background-color: #e2ffe2;
+}
+
+tr.odd.gradeC td.sorting_1 {
+	background-color: #c4c4ff;
+}
+
+tr.odd.gradeC td.sorting_2 {
+	background-color: #d1d1ff;
+}
+
+tr.odd.gradeC td.sorting_3 {
+	background-color: #d1d1ff;
+}
+
+tr.even.gradeC td.sorting_1 {
+	background-color: #d5d5ff;
+}
+
+tr.even.gradeC td.sorting_2 {
+	background-color: #e2e2ff;
+}
+
+tr.even.gradeC td.sorting_3 {
+	background-color: #e2e2ff;
+}
+
+tr.odd.gradeX td.sorting_1 {
+	background-color: #ffc4c4;
+}
+
+tr.odd.gradeX td.sorting_2 {
+	background-color: #ffd1d1;
+}
+
+tr.odd.gradeX td.sorting_3 {
+	background-color: #ffd1d1;
+}
+
+tr.even.gradeX td.sorting_1 {
+	background-color: #ffd5d5;
+}
+
+tr.even.gradeX td.sorting_2 {
+	background-color: #ffe2e2;
+}
+
+tr.even.gradeX td.sorting_3 {
+	background-color: #ffe2e2;
+}
+
+tr.odd.gradeU td.sorting_1 {
+	background-color: #c4c4c4;
+}
+
+tr.odd.gradeU td.sorting_2 {
+	background-color: #d1d1d1;
+}
+
+tr.odd.gradeU td.sorting_3 {
+	background-color: #d1d1d1;
+}
+
+tr.even.gradeU td.sorting_1 {
+	background-color: #d5d5d5;
+}
+
+tr.even.gradeU td.sorting_2 {
+	background-color: #e2e2e2;
+}
+
+tr.even.gradeU td.sorting_3 {
+	background-color: #e2e2e2;
+}
+
+
+/*
+ * Row highlighting example
+ */
+.ex_highlight #example tbody tr.even:hover, #example tbody tr.even td.highlighted {
+	background-color: #ECFFB3;
+}
+
+.ex_highlight #example tbody tr.odd:hover, #example tbody tr.odd td.highlighted {
+	background-color: #E6FF99;
+}
+
+#blox_lists tr td{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-family: bold;
+}
+
+.edit_icon:hover {
+	opacity:0.5;
+}
+
+.delete_icon:hover {
+	opacity:0.5;
+}
+
+.no_border {
+	border-collapse:collapse;
+	width:80%;
+}
+
+.dt_edit, .dt_create{
+	background-color : #fff;
+	
+}
+
+.dt_edit td, .dt_create td {
+	border : 1px solid #ccc;
+	margin : 0px;
+	padding : 3px 10px;
+}
+
+.dt_edit th, .dt_create th {
+	background-color:#ddd;
+}
+
+.library_login {
+	font-size: 15px;
+    font-family: bold;
+}
+
+.lib_user, .lib_pwd, .lib_email, .lib_paypal, .lib_license, .lib_btn {
+	width: 300px;
+	display: inline-block;
+}
+
+.lib_user, .lib_pwd, .lib_email, .lib_paypal, .lib_license {
+	margin-top : 8px;
+}
+
+.lib_btn {
+	margin-top: 20px;
+}
+
+.lib_span {
+	float: left;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.lib_input {
+	float: right;
+    color: #666;
+    background: #f7f7f7;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+.myBlox-wrap, .groupBlox-wrap, .marketBlox-wrap {
+	width: 100%;
+}
+
+#edit_dialog, #edit_structure_dialog, #view_dialog {
+	display: none;
+	vertical-align: middle;
+}
+
+#edit_dialogLT {
+	display: none; 
+	vertical-align: middle;
+}
+
+.edit-link-table {
+	background: #FFFFFF;
+	width: 100%;
+	border: 1px solid #DDDDDD;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.check-column {
+	width: 30px;
+	height: 30px;
+	padding-left: 5px;
+}
+
+#add_dialog {
+	display: none;
+}
+
+#paid-status {
+	position: absolute;
+	top: 30px;
+}
+
+.sel-cat {
+	position: absolute;
+}
+
+#xi_post_form #xiblox {
+	border : none;
+}
+
+#saving_msg {
+	text-align: center;
+	display: none;
+}
+#saving_msg img {
+    padding-top: 10%;
+}
+
+.old_view, .use-version {
+	margin-left: 4px;
+	padding: 4px 8px;
+	position: relative;
+	top: -3px;
+	text-decoration: none;
+	border: 0;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background: #e0e0e0;
+	text-shadow: none;
+	font-weight: 600;
+	font-size: 13px;
+	color: #0074a2 !important;
+}
+
+.old_view: hover{
+	background: #2ea2cc;
+}
+
+.my_group_wrap {
+	display : none;
+}
+
+.all_group_wrap, .my_group_wrap {
+	width : 98%;
+}
+
+#member_lists td {
+	text-align : center;
+}
+
+#member_lists input {
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	background-color: #DDDDDD;
+	font-size: 13px;
+}
+
+#noti_dialog {
+	display: none; 
+	padding: 40px; 
+	padding-top: 10px;
+}
+
+.ajax-loader-bar {
+	padding-left: 5%;
+}
+
+#dt_main_form {
+	position: absolute;
+}
+
+.wrapper-btn {
+	display: inline-block;
+}
+
+.license-wrap, #ajax_field {
+    margin-top: 10px;
+}
+
+.extra_backImg {
+	background-position-y: 1.9% !important;
+}
+#applyBtn {
+    margin-left: 5px;
+    color: #666;
+    background: #f7f7f7;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.store_files {
+    width: 200px;
+}
+.v-comment {
+    width: 100%;
+    min-height: 100px;
+}
+
+@charset "utf-8";
+/* CSS Document */
+
+.error {
+	color:#FF0000;
+	font-size:12px;
+	
+}
+
+.page_tree {
+	background-color:#EFEFEF;
+	padding:20px;
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+#select_status {
+	background-color:#57A2FF;
+	-webkit-border-radius: 3px;
+	-moz-border: 3px;
+	border-radius: 3px;
+	padding:10px;
+	margin-bottom:20px;
+	margin-top : 10px;
+	-webkit-box-shadow: 1px 1px 5px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    1px 1px 5px rgba(50, 50, 50, 0.75);
+	box-shadow:         1px 1px 5px rgba(50, 50, 50, 0.75);
+	text-shadow: 		1px 1px 2px rgba(0, 0, 0, 1);
+	color : #fff;
+}
+
+#add_new {
+	width : 80px;
+	height : 40px;
+	-webkit-border-radius: 3px;
+	-moz-border: 3px;
+	border-radius: 3px;
+	background-color:#efefef;
+	text-decoration:none;
+	border:1px solid #cccccc;
+	padding:5px;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:12px;
+	color:#FF0000;
+}
+
+#add_new:hover {
+	background-color:#CCCCCC;
+	cursor:pointer;
+}
+
+#edit {
+	-webkit-border-radius: 3px;
+	-moz-border: 3px;
+	border-radius: 3px;
+	background-color:#efefef;
+	text-decoration:none;
+	border:1px solid #cccccc;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:10px;
+	color:#FF0000;
+}
+
+#edit:hover {
+	background-color:#CCCCCC;
+	cursor:pointer;
+}
+
+#edit_tab {
+	display:none;
+}
+
+#delete {
+	-webkit-border-radius: 3px;
+	-moz-border: 3px;
+	border-radius: 3px;
+	background-color:#efefef;
+	text-decoration:none;
+	border:1px solid #cccccc;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:10px;
+	color:#FF0000;
+}
+
+#delete:hover {
+	background-color:#CCCCCC;
+	cursor:pointer;
+}
+
+#preview_img {
+	color:#CC0066;
+	opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   padding : 2px;
+   padding-left : 5px;
+   padding-right : 5px;
+   text-decoration:none;
+   -webkit-border-radius: 3px;
+	-moz-border: 3px;
+	border-radius: 3px;
+}
+
+#preview_img:hover {
+	background-color:#CCCCCC;
+	opacity: 0.5;
+}
+
+#preview_page {
+	color:#CC0066;
+	opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   padding : 2px;
+   padding-left : 5px;
+   padding-right : 5px;
+   text-decoration:none;
+   -webkit-border-radius: 3px;
+	-moz-border: 3px;
+	border-radius: 3px;
+	font-size:9px;
+}
+
+#preview_page:hover {
+	background-color:#CCCCCC;
+	opacity: 0.5;
+}
+
+#post_form a {
+	text-decoration:none;
+}
+
+
+
+#tab_contents {
+	resize:none;
+	width:400px;
+	height : 300px;
+}
+
+#edit_tab_contents {
+	resize:none;
+	width:400px;
+	height : 300px;
+}
+
+#navigation li a {
+	padding-left : 5px;
+
+}
+
+#status {
+}
+
+
+.instruction {
+	font-style:italic;
+	color:#999;
+}
+
+#xiprogress.progress {
+	height:initial;
+}
+
+#log-container {
+	height:250px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+#ajax_field {
+	border-color: #C0C0C0;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    font-size: 10px;
+    font-weight: 100;
+    height: 230px;
+    max-height: 230px;
+    max-width: 1000px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	margin-top: 0px;
+	border-bottom-left-radius: 3px;
+}
+#ajax_field p:nth-child(even) {
+	background-color:#FFF;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	padding:2px 2px 2px 10px;
+	margin:0px;
+}
+
+#ajax_field p:nth-child(odd) {
+	background-color:#e0e0e0;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	padding:2px 2px 2px 10px;
+	margin:0px;
+}
+
+#ajax_field .error {
+	background-color:#FF6F72 !important;
+	color:#FFF;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	padding:2px 2px 2px 10px;
+	margin:0px;
+}
+
+#ajax_field .complete {
+	background-color:#0C0 !important;
+	color:#336;
+	font-weight:bold;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	padding:2px 2px 2px 10px;
+	margin:0px;
+}

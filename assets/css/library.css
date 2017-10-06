@@ -1,0 +1,113 @@
+.childBlox {
+    display: none;
+}
+#blox_lists_length {
+    display: none;
+}
+#blox_lists_info {
+    display: none;
+}
+#blox_lists_paginate {
+    display: none;
+}
+#blox_lists {
+    font-family: "Segoe UI", Helvetica, Verdana;
+}
+.circleBase {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+}
+.treeview {
+    font-size: 15px;
+    font-family: "Segoe UI", Helvetica, Verdana !important;
+}
+.backImg {
+    background: url(../../images/test.GIF) 0 0 no-repeat;
+}
+.expandable-hitarea {
+    background: url(../../images/treeview-default.gif) -81px -3px no-repeat;
+}
+.collapsable {
+    background: url(../../images/treeview-default.gif) -64px -25px no-repeat;
+}
+#collapseAll {
+    float: left;
+}
+#expandAll {
+    float: left;
+}
+#toggleAll {
+    float: left;
+}
+.collapseAll {
+    float: left;
+    margin-top: 4px;
+    margin-right: 4px;
+    width: 12px;
+    height: 12px;
+    background: url(../../images/treeview-default.gif) -64px -25px no-repeat;
+}
+.expandAll {
+    float: left;
+    margin-top: 4px;
+    margin-right: 4px;
+    width: 12px;
+    height: 12px;
+    background: url(../../images/treeview-default.gif) -64px -25px no-repeat;
+    background-position: -80px -3px;
+}
+.toggleAll {
+    float: left;
+}
+#myBlox, #otherBlox {
+    border: 1px solid rgb(214, 213, 213);
+    width: 100%;
+}
+#myBlox tr th{
+    height: 30px;
+    font-size: 20px;
+    font-family: bold;
+}
+#myBlox tr td {
+    font-size: 15px;
+    height: 22px;
+}
+#myBlox a, #otherBlox a {
+    text-decoration: none;
+}
+#otherBlox tr th{
+    height: 30px;
+    font-size: 20px;
+    font-family: bold;
+}
+#otherBlox tr td {
+    font-size: 15px;
+    height: 22px;
+}
+
+#bloxPrivate, #bloxPaid, #bloxFree {
+    font-style: italic;
+    padding: 3px;
+    opacity: 0.8;
+    display: inline-block;
+}
+#selType {
+    height: 24px;
+}
+div.dataTables_wrapper .xiUi-widget-header { display: none; }
+#blox_lists tr td {
+    font-size: 14px;
+}
+.groupBlox-wrap, .marketBlox-wrap {
+    display: none;
+}
+.download-btn {
+    height: 21px;
+    padding-top: 1px;
+}
+.buy-btn {
+    width: 95px;
+}

@@ -1,0 +1,30 @@
+/* Multiselect
+----------------------------------*/
+
+.xiUi-multiselect { border: solid 1px; font-size: 0.8em; }
+.xiUi-multiselect ul { -moz-user-select: none; }
+.xiUi-multiselect li { margin: 0; padding: 0; cursor: default; line-height: 20px; height: 20px; font-size: 11px; list-style: none; }
+.xiUi-multiselect li a { color: #999; text-decoration: none; padding: 0; display: block; float: left; cursor: pointer;}
+.xiUi-multiselect li.xiUi-draggable-dragging { padding-left: 10px; }
+
+.xiUi-multiselect div.selected { position: relative; padding: 0; margin: 0; border: 0; float:left; }
+.xiUi-multiselect ul.selected { position: relative; padding: 0; overflow: auto; overflow-x: hidden; background: #fff; margin: 0; list-style: none; border: 0; position: relative; width: 100%; }
+.xiUi-multiselect ul.selected li { }
+
+.xiUi-multiselect div.available { position: relative; padding: 0; margin: 0; border: 0; float:left; border-left: 1px solid; }
+.xiUi-multiselect ul.available { position: relative; padding: 0; overflow: auto; overflow-x: hidden; background: #fff; margin: 0; list-style: none; border: 0; width: 100%; }
+.xiUi-multiselect ul.available li { padding-left: 10px; }
+ 
+.xiUi-multiselect .xiUi-state-default { border: none; margin-bottom: 1px; position: relative; padding-left: 20px;}
+.xiUi-multiselect .xiUi-state-hover { border: none; }
+.xiUi-multiselect .xiUi-widget-header {border: none; font-size: 11px; margin-bottom: 1px;}
+ 
+.xiUi-multiselect .add-all { float: right; padding: 7px;}
+.xiUi-multiselect .remove-all { float: right; padding: 7px;}
+.xiUi-multiselect .search { float: left; padding: 4px;}
+.xiUi-multiselect .count { float: left; padding: 7px;}
+
+.xiUi-multiselect li span.xiUi-icon-arrowthick-2-n-s { position: absolute; left: 2px; }
+.xiUi-multiselect li a.action { position: absolute; right: 2px; top: 2px; }
+ 
+.xiUi-multiselect input.search { height: 14px; padding: 1px; opacity: 0.5; margin: 4px; width: 100px; }
