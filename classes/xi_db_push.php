@@ -235,10 +235,10 @@
 			$res = self::$db_conn->queryArray( $sql );
 			
 			if ( count($res) > 0 ) 
-				return true;
-			else 
-				return false;
-		}
+					return true;
+				else 
+					return false;
+			}
         
         public function truncate_table($table_name) {
 			$dest_table_name = str_replace(self::$curr_dbhandler -> prefix, self::$db_prefix, $table_name);
@@ -262,7 +262,7 @@
 					$required_fields = array('link_description');
 					break;
 				case 'options':
-					$required_fields = array('option_value');
+					$required_fields = array();
 					break;
 				case 'postmeta':
 					$required_fields = array('meta_value');
@@ -292,32 +292,57 @@
 			return $required_fields;
 		}
 
-        public function migrate_table($table_name) {
+    public function migrate_table($table_name) {
 			echo "Migrating table " . $table_name . ".";
 			$required_fields = $this -> get_replace_fields($table_name);
 			$dest_table_name = str_replace(self::$curr_dbhandler -> prefix, self::$db_prefix, $table_name);
 			$this->check_db($table_name);
-            $sql = "SHOW COLUMNS FROM `" . $table_name . "`";
-            $columns = self::$curr_dbhandler -> get_results($sql, ARRAY_A);
+			$sql = "SHOW COLUMNS FROM `" . $table_name . "`";
+			$columns = self::$curr_dbhandler -> get_results($sql, ARRAY_A);
 
-            $sql = "SELECT * FROM `" . $table_name . "`";
-            $rows = self::$curr_dbhandler -> get_results($sql, ARRAY_A);
-            foreach ($rows as $row) {
+			$sql = "SELECT * FROM `" . $table_name . "`";
+			$rows = self::$curr_dbhandler -> get_results($sql, ARRAY_A);
+			foreach ($rows as $row) {
 				if (!empty($required_fields)) {
 					foreach ($required_fields as $field) {
 						if ($row[$field]) {
 							//$row[$field] = $this -> string_replace_path($row[$field]);
 							$row[$field] = $this -> string_replace_url($row[$field]);
 						}
-							
 					}
 				}
+				/* options table */
+				if ('options' == str_replace(self::$curr_dbhandler -> prefix, '', $table_name)) {
+					if (is_serialized( $row['option_value'] )) {
+						$baseurl = get_site_url();
+						$destination = self::$destination_url;
+						$option_arr = unserialize($row['option_value']);
+						$this->recursive_array_replace($baseurl, $destination, $option_arr);
+						$row['option_value'] = serialize($option_arr);
+					} else {
+						$row['option_value'] = $this-> string_replace_url($row['option_value']);
+					}
+				}
+
 				$sql = "INSERT INTO `" . $dest_table_name . "` VALUES('" . implode("','", array_map(array(self::$db_conn, 'real_escape_string'), $row)) . "')";
-                if (!$res = self::$db_conn->query($sql)) {
+        if (!$res = self::$db_conn->query($sql)) {
 					printf("Sql Error: %s\n</br>", self::$db_conn->error());
 				}
-            }
-            
+      }
+		 }
+		 
+		public function recursive_array_replace($find, $replace, & $data) {
+			if (is_array($data)) {
+				foreach($data as $key => $value) {
+					if (is_array($value)) {
+						recursive_array_replace($find, $replace, $data[$key]);
+					} else {
+						if (is_string($value)) $data[$key] = str_replace($find, $replace, $value);
+					}
+				}
+			} else {
+				if (is_string($data)) $data = str_replace($find, $replace, $data);
+			}
 		}
 		
 		public function check_db($table_name) {

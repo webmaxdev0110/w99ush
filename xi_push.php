@@ -14,14 +14,18 @@ $db_password = $result[0]["db_password"];
 $db_prefix = $result[0]["db_prefix"];
 $destination_path = $result[0]["destination_path"];
 
-if (empty($destination_url) || empty($db_host) || empty($db_user) || empty($db_name)){
-	echo "<div class=\"updated fade\">";
-	echo "Please configure this plugin before using it. <a href=\"admin.php?page=XIBLOX/xi_settings.php\">Configure</a>";
-	echo "</div>";
-	exit();
-}
 ?>
 <div class="row wrapper border-bottom white-bg page-heading">
+    <?php
+        if (empty($destination_url) || empty($db_host) || empty($db_user) || empty($db_name)){
+            echo '<div class="col-lg-10 p-md">';
+            echo "<div class=\"alert alert-info\">";
+            echo "Please configure this plugin before using it. <a href=\"admin.php?page=XIPUSH/xi_settings.php\">Configure</a>";
+            echo "</div>";
+            echo '</div>';
+            exit();
+        }
+    ?>
     <div class="col-lg-10">
         <h2>XIPUSH Publish</h2>
     </div>
